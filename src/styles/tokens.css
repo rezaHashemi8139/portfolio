@@ -1,0 +1,148 @@
+/*
+  Design system — Parsian IT theme
+  Mirrors parsianitco.com's own tokens: midnight navy ground, teal primary, purple secondary,
+  orange accent; Instrument Serif for the hero, Montserrat 800 for headings, Inter for text.
+  Layout: a fixed WebGL stage behind everything; content sits on solid-leaning navy surfaces
+  with 20px radii and hairline brand-tinted borders.
+
+  Dark-first token structure: bare :root holds the dark palette; light values apply for an
+  explicit data-theme="light" and for light-preferring systems that haven't chosen.
+*/
+
+:root {
+  color-scheme: dark;
+
+  /* brand */
+  --brand-teal: #00c9a7;
+  --brand-purple: #802392;
+  --brand-orange: #e85d2f;
+
+  /* colour */
+  --bg: #0d0d1a;
+  --bg-2: #0a0a16;
+  --surface: rgba(18, 18, 42, 0.78);
+  --surface-strong: rgba(18, 18, 42, 0.92);
+  --surface-raised: rgba(30, 30, 58, 0.85);
+  --glass-hi: rgba(255, 255, 255, 0.035);
+  --highlight: rgba(255, 255, 255, 0.06);
+  --border: rgba(0, 201, 167, 0.14);
+  --border-strong: rgba(0, 201, 167, 0.35);
+  --fg: #f4f4f8;
+  --fg-soft: rgba(244, 244, 248, 0.82);
+  --fg-muted: #b4bac4;
+  --fg-subtle: #9ca3af;
+  --accent: #00c9a7;
+  --accent-strong: #3fe0c3;
+  --accent-ink: #06121a;
+  --accent-soft: rgba(0, 201, 167, 0.1);
+  --secondary: #a94bbd;
+  --secondary-soft: rgba(128, 35, 146, 0.16);
+  --warm: #ef7a50;
+  --warm-soft: rgba(232, 93, 47, 0.14);
+  --glow: rgba(0, 201, 167, 0.28);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --shadow-raised: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(0, 201, 167, 0.08);
+  --scrim: rgba(13, 13, 26, 0.94);
+  --fallback-a: rgba(0, 201, 167, 0.16);
+  --fallback-b: rgba(128, 35, 146, 0.22);
+  --selection: rgba(0, 201, 167, 0.3);
+
+  /* type */
+  --font-serif: var(--nf-serif), 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-display: var(--nf-display), 'Montserrat', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: var(--nf-body), 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: var(--nf-body), 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --step--2: 0.75rem;
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.125rem;
+  --step-2: clamp(1.2rem, 1.05rem + 0.6vw, 1.4rem);
+  --step-3: clamp(1.5rem, 1.15rem + 1.5vw, 2.2rem);
+  --step-4: clamp(2.2rem, 1.3rem + 3.4vw, 3.25rem);
+  --step-hero: clamp(3.6rem, 1rem + 9.4vw, 10rem);
+
+  /* shape & space */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+  --gutter: 20px;
+  --section-pad: clamp(5rem, 8vw, 7.5rem);
+  --container: 1240px;
+  --nav-h: 72px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur: 420ms;
+  --dur-slow: 800ms;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    color-scheme: light;
+    --bg: #f4f4f8;
+    --bg-2: #eaeaef;
+    --surface: rgba(255, 255, 255, 0.86);
+    --surface-strong: rgba(255, 255, 255, 0.96);
+    --surface-raised: rgba(255, 255, 255, 0.92);
+    --glass-hi: rgba(255, 255, 255, 0.6);
+    --highlight: rgba(255, 255, 255, 0.9);
+    --border: #d8d8e4;
+    --border-strong: rgba(128, 35, 146, 0.3);
+    --fg: #0d0d1a;
+    --fg-soft: rgba(13, 13, 26, 0.78);
+    --fg-muted: #3d3d52;
+    --fg-subtle: #5c5c70;
+    --accent: #802392;
+    --accent-strong: #5f1a6d;
+    --accent-ink: #ffffff;
+    --accent-soft: rgba(128, 35, 146, 0.08);
+    --secondary: #00876f;
+    --secondary-soft: rgba(0, 168, 138, 0.1);
+    --warm: #c94a1f;
+    --warm-soft: rgba(232, 93, 47, 0.1);
+    --glow: rgba(128, 35, 146, 0.18);
+    --shadow: 0 4px 20px rgba(13, 13, 26, 0.06);
+    --shadow-raised: 0 12px 36px rgba(13, 13, 26, 0.1), 0 0 0 1px rgba(128, 35, 146, 0.06);
+    --scrim: rgba(244, 244, 248, 0.96);
+    --fallback-a: rgba(128, 35, 146, 0.1);
+    --fallback-b: rgba(0, 168, 138, 0.1);
+    --selection: rgba(128, 35, 146, 0.18);
+  }
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f4f8;
+  --bg-2: #eaeaef;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --surface-raised: rgba(255, 255, 255, 0.92);
+  --glass-hi: rgba(255, 255, 255, 0.6);
+  --highlight: rgba(255, 255, 255, 0.9);
+  --border: #d8d8e4;
+  --border-strong: rgba(128, 35, 146, 0.3);
+  --fg: #0d0d1a;
+  --fg-soft: rgba(13, 13, 26, 0.78);
+  --fg-muted: #3d3d52;
+  --fg-subtle: #5c5c70;
+  --accent: #802392;
+  --accent-strong: #5f1a6d;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(128, 35, 146, 0.08);
+  --secondary: #00876f;
+  --secondary-soft: rgba(0, 168, 138, 0.1);
+  --warm: #c94a1f;
+  --warm-soft: rgba(232, 93, 47, 0.1);
+  --glow: rgba(128, 35, 146, 0.18);
+  --shadow: 0 4px 20px rgba(13, 13, 26, 0.06);
+  --shadow-raised: 0 12px 36px rgba(13, 13, 26, 0.1), 0 0 0 1px rgba(128, 35, 146, 0.06);
+  --scrim: rgba(244, 244, 248, 0.96);
+  --fallback-a: rgba(128, 35, 146, 0.1);
+  --fallback-b: rgba(0, 168, 138, 0.1);
+  --selection: rgba(128, 35, 146, 0.18);
+}

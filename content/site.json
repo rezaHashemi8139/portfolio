@@ -1,0 +1,386 @@
+{
+  "site": {
+    "url": "",
+    "name": "Saman DorEmami",
+    "language": "en"
+  },
+  "seo": {
+    "title": "Saman DorEmami — Senior Front-end Developer",
+    "description": "Saman DorEmami — Senior Front-end Developer. 4+ years building scalable, high-performance web applications with React, Next.js and TypeScript.",
+    "keywords": [
+      "Saman DorEmami",
+      "Front-end developer",
+      "Senior front-end developer",
+      "React developer",
+      "Next.js developer",
+      "TypeScript",
+      "Portfolio"
+    ],
+    "ogImage": "/media/saman-avatar.jpg",
+    "ogImageAlt": "Saman DorEmami — Senior Front-end Developer",
+    "twitterHandle": "",
+    "noindex": false
+  },
+  "profile": {
+    "firstName": "Saman",
+    "lastName": "DorEmami",
+    "title": "Senior Front-end Developer",
+    "yearsOfExperience": "4+",
+    "photo": "/media/saman-portrait.webp",
+    "photoFallback": "/media/saman-portrait.jpg",
+    "photoAlt": "Portrait of Saman DorEmami",
+    "portraitCaption": "Front-end",
+    "resumeFile": "/media/Saman_DorEmami_Resume.pdf",
+    "resumeFileName": "Saman_DorEmami_Resume.pdf",
+    "summary": "Front-end developer with 4+ years of experience building clean, scalable, and high-performance web applications. Proficient in Next.js, React, and TypeScript/JavaScript, with a strong focus on user experience, maintainable code, and modern frontend technologies.",
+    "heroIntro": "I build **clean, scalable, high-performance** web applications with **Next.js, React and TypeScript** — from role-based CRM platforms and monorepos to real-time healthcare systems.",
+    "core": ["Next.js", "React", "TypeScript"]
+  },
+  "contacts": [
+    {
+      "type": "email",
+      "label": "Email",
+      "value": "mrgreen.voidmain@gmail.com",
+      "href": "mailto:mrgreen.voidmain@gmail.com",
+      "copy": "mrgreen.voidmain@gmail.com"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/saman-emamie",
+      "href": "https://linkedin.com/in/saman-emamie",
+      "copy": ""
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "value": "github.com/samanemamie",
+      "href": "https://github.com/samanemamie",
+      "copy": ""
+    },
+    {
+      "type": "phone",
+      "label": "Phone",
+      "value": "+98 902 425 1296",
+      "href": "tel:+989024251296",
+      "copy": "+98 902 425 1296"
+    }
+  ],
+  "sections": {
+    "about": {
+      "tag": "About",
+      "title": "Front-end, *end to end.*",
+      "statement": "I build interfaces that stay fast and maintainable as products grow — with a strong focus on user experience and clean, testable code.",
+      "statementAccent": ["fast", "maintainable", "user", "experience"],
+      "stats": [
+        { "value": 4, "suffix": "+", "label": "years of front-end experience" },
+        { "value": 10, "suffix": "", "label": "MVPs delivered in 12 months" },
+        { "value": 2000, "suffix": "+", "label": "active users on dashboards I led" },
+        { "value": 4, "suffix": "", "label": "companies, incl. remote US & Canadian teams" }
+      ],
+      "strengths": [
+        {
+          "icon": "boxes",
+          "title": "Front-end architecture",
+          "text": "Migrated a multi-app frontend to a Turborepo monorepo with shared packages for API clients, components, providers, utilities and types."
+        },
+        {
+          "icon": "shield-check",
+          "title": "Access control & complex workflows",
+          "text": "Granular, role-based permissions for menus, tabs, columns, filters and actions — plus commissions, refunds, contracts and sales tax flows."
+        },
+        {
+          "icon": "radio",
+          "title": "Real-time & PWA",
+          "text": "WebSocket (SignalR) for live updates and chat, Service Workers for push notifications and offline support."
+        },
+        {
+          "icon": "flask-conical",
+          "title": "Testing culture",
+          "text": "Vitest, React Testing Library and MSW, applied with Clean Code, SOLID, DRY and design patterns."
+        },
+        {
+          "icon": "users",
+          "title": "Team leadership",
+          "text": "Led a front-end team, mentored junior developers and ran in-depth code reviews."
+        }
+      ]
+    },
+    "skills": {
+      "tag": "Skills",
+      "title": "Core *Toolkit*",
+      "intro": "Grouped the way they show up in real work: the core stack, the styling and state layers around it, and the practices that keep it maintainable.",
+      "coreTitle": "Core stack",
+      "core": [
+        {
+          "name": "Next.js",
+          "note": "SSR / SSG",
+          "evidence": "Hospital booking, doctor profiles, an SSR/SSG e-commerce platform and 10 MVPs with Supabase."
+        },
+        {
+          "name": "React",
+          "note": "SPA · dashboards",
+          "evidence": "A role-based CRM, real-time patient chat, and dashboards serving 2,000+ active users."
+        },
+        {
+          "name": "TypeScript",
+          "note": "+ JavaScript",
+          "evidence": "Typed shared packages for API clients, components and utilities across a Turborepo monorepo."
+        }
+      ],
+      "groups": [
+        {
+          "id": "frameworks",
+          "title": "Languages & Frameworks",
+          "caption": "The core of every product I ship.",
+          "icon": "code",
+          "showCard": false,
+          "wide": false,
+          "items": ["Next.js", "React.js", "TypeScript", "JavaScript"]
+        },
+        {
+          "id": "styling",
+          "title": "Styling",
+          "caption": "Design systems and component libraries.",
+          "icon": "palette",
+          "showCard": true,
+          "wide": false,
+          "items": ["Tailwind", "Shadcn UI", "SCSS / SASS", "Material UI"]
+        },
+        {
+          "id": "state",
+          "title": "State Management",
+          "caption": "Predictable client state at scale.",
+          "icon": "database",
+          "showCard": true,
+          "wide": false,
+          "items": ["Zustand", "Redux Toolkit"]
+        },
+        {
+          "id": "testing",
+          "title": "Testing",
+          "caption": "Confidence through unit and integration tests.",
+          "icon": "flask-conical",
+          "showCard": true,
+          "wide": false,
+          "items": ["Vitest", "React Testing Library", "Unit Testing", "Integration Testing"]
+        },
+        {
+          "id": "realtime",
+          "title": "Real-time & PWA",
+          "caption": "Live updates and offline-ready apps.",
+          "icon": "radio",
+          "showCard": true,
+          "wide": false,
+          "items": ["WebSocket (SignalR)", "Service Workers", "Push Notifications", "Offline Support", "PWA"]
+        },
+        {
+          "id": "practices",
+          "title": "Practices & Tools",
+          "caption": "How I keep codebases maintainable.",
+          "icon": "git-branch",
+          "showCard": true,
+          "wide": true,
+          "items": ["Git (Husky, Conventional Commits)", "Agile / Scrum", "Storybook", "Clean Code", "SOLID", "DRY", "Design Patterns"]
+        }
+      ]
+    },
+    "experience": {
+      "tag": "Experience",
+      "title": "Where I’ve *Built*",
+      "intro": "From e-commerce and AR tooling to healthcare platforms and a role-based CRM — remote teams in the US and Canada included.",
+      "highlightTerms": [
+        "permission-based access control system",
+        "React Testing Library",
+        "Turborepo monorepo",
+        "10 fully functional MVPs",
+        "2,000 active users",
+        "TypeScript",
+        "WebSocket",
+        "Next.js",
+        "Supabase",
+        "Vitest",
+        "React",
+        "MSW",
+        "SSR & SSG"
+      ]
+    },
+    "work": {
+      "tag": "Work",
+      "title": "Selected *Work*",
+      "intro": "Products I built or led on the front end, from a multi-module CRM to healthcare platforms, dashboards and e-commerce."
+    },
+    "education": {
+      "tag": "Education",
+      "title": "Education & *Languages*",
+      "languagesTitle": "Languages"
+    },
+    "contact": {
+      "tag": "Contact",
+      "title": "Let’s build something *precise.*",
+      "text": "Hiring for a front-end role or need a React / Next.js engineer on your product? Reach out by email or LinkedIn — or grab the résumé.",
+      "emailButtonLabel": "Email Saman"
+    }
+  },
+  "experience": [
+    {
+      "company": "usedConex",
+      "companyUrl": "https://usedconex.com/",
+      "role": "Senior Frontend Developer",
+      "start": "2025-08",
+      "end": "",
+      "location": "USA · Remote",
+      "highlights": [
+        "Developed and maintained a role-based CRM platform using React and TypeScript, implementing core modules including Orders, Sales Pipeline, Inventory, Depots, Users, Tickets, and Notifications.",
+        "Architected and migrated the frontend to a scalable Turborepo monorepo, creating reusable shared packages for API clients, components, providers, utilities, and types across multiple applications.",
+        "Designed and implemented a granular permission-based access control system supporting role-specific access to menus, sections, tabs, columns, filters, tables, and actions.",
+        "Built complex sales and operational workflows including Commissions, Discounts, Sales Tax, Refunds, Contracts, Order Notes, Announcements, and Analytics, integrating them with backend APIs and real-time updates.",
+        "Established frontend testing practices using Vitest, React Testing Library, and MSW, while applying Clean Code, SOLID, DRY, and Design Patterns to maintain a scalable and maintainable codebase."
+      ],
+      "stack": ["React", "TypeScript", "Turborepo", "Vitest", "React Testing Library", "MSW"]
+    },
+    {
+      "company": "Rayteb",
+      "companyUrl": "https://www.linkedin.com/in/ray-teb-a8b165210/",
+      "role": "Frontend Developer",
+      "start": "2024-07",
+      "end": "2025-07",
+      "location": "",
+      "highlights": [
+        "Developed an appointment scheduling system for public hospitals and private clinics using Next.js, enabling patients to book appointments and verify their information through integrations with government medical organizations such as Social Security Insurance and Health Insurance — cutting average appointment booking time significantly.",
+        "Built a real-time support chat system using React and WebSocket, enabling seamless communication between patients and support representatives and measurably improving response times and customer satisfaction.",
+        "Engineered a doctor profile platform using Next.js, showcasing doctors' backgrounds, experience, and professional history, which contributed to higher patient engagement with doctor profiles.",
+        "Created a React-based dashboard for doctors to manage and prescribe medications, streamlining the prescription workflow and reducing time spent on administrative tasks."
+      ],
+      "stack": ["Next.js", "React", "WebSocket"]
+    },
+    {
+      "company": "Sparkbridge Incubator Ltd",
+      "companyUrl": "https://www.sparkbridge.ca/about",
+      "role": "Front-end Developer",
+      "start": "2023-04",
+      "end": "2024-06",
+      "location": "Canada · Remote",
+      "highlights": [
+        "Led and organized the front-end development team, driving the adoption of modern technologies and migrating two legacy websites to React-based Single-Page Applications (SPAs), improving page load speed and user retention.",
+        "Mentored junior developers, conducted in-depth code reviews to ensure high code quality, and led the development of two scalable React-based dashboards serving over 2,000 active users.",
+        "Delivered 10 fully functional MVPs within 12 months using Next.js and Supabase's serverless architecture, consistently meeting tight deadlines while maintaining high-quality standards."
+      ],
+      "stack": ["React", "Next.js", "Supabase"]
+    },
+    {
+      "company": "Minogar",
+      "companyUrl": "",
+      "role": "Frontend Developer",
+      "start": "2022-03",
+      "end": "2023-03",
+      "location": "",
+      "highlights": [
+        "Designed and developed an e-commerce platform using Next.js, implementing advanced rendering strategies (SSR & SSG) to optimize performance and SEO, reducing page load time and increasing organic traffic.",
+        "Launched a React-based admin panel for uploading and managing 3D models for AR web experiences, including comprehensive product management features."
+      ],
+      "stack": ["Next.js", "React", "SSR / SSG"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "crm",
+      "title": "Role-based CRM Platform",
+      "context": "usedConex",
+      "year": "2025 — now",
+      "summary": "A multi-module CRM covering Orders, Sales Pipeline, Inventory, Depots, Users, Tickets and Notifications, with sales workflows such as Commissions, Discounts, Sales Tax, Refunds and Contracts.",
+      "contributions": [
+        "Granular permission system down to menus, tabs, columns, filters and actions",
+        "Migrated the frontend to a Turborepo monorepo with shared packages",
+        "Testing practice with Vitest, React Testing Library and MSW"
+      ],
+      "stack": ["React", "TypeScript", "Turborepo", "Vitest", "MSW"],
+      "metricValue": "",
+      "metricLabel": "",
+      "linkHref": "https://usedconex.com/",
+      "linkLabel": "usedconex.com"
+    },
+    {
+      "id": "appointments",
+      "title": "Hospital Appointment Scheduling",
+      "context": "Rayteb",
+      "year": "2024 — 2025",
+      "summary": "Online booking for public hospitals and private clinics, verifying patient information through integrations with government medical organizations such as Social Security Insurance and Health Insurance.",
+      "contributions": [
+        "Booking flow built with Next.js",
+        "Integrations with government insurance organizations",
+        "Cut average appointment booking time significantly"
+      ],
+      "stack": ["Next.js"],
+      "metricValue": "",
+      "metricLabel": "",
+      "linkHref": "",
+      "linkLabel": ""
+    },
+    {
+      "id": "support-chat",
+      "title": "Real-time Patient Support Chat",
+      "context": "Rayteb",
+      "year": "2024 — 2025",
+      "summary": "A live chat system connecting patients with support representatives, measurably improving response times and customer satisfaction.",
+      "contributions": ["Real-time messaging over WebSocket", "Built with React"],
+      "stack": ["React", "WebSocket"],
+      "metricValue": "",
+      "metricLabel": "",
+      "linkHref": "",
+      "linkLabel": ""
+    },
+    {
+      "id": "dashboards",
+      "title": "React Dashboards & SPA Migrations",
+      "context": "Sparkbridge Incubator",
+      "year": "2023 — 2024",
+      "summary": "Led the front-end team that migrated two legacy websites to React single-page applications and built two scalable dashboards.",
+      "contributions": ["Improved page load speed and user retention", "Mentored junior developers and ran code reviews"],
+      "stack": ["React", "SPA"],
+      "metricValue": "2,000+",
+      "metricLabel": "active users",
+      "linkHref": "https://www.sparkbridge.ca/about",
+      "linkLabel": "sparkbridge.ca"
+    },
+    {
+      "id": "mvps",
+      "title": "10 MVPs in 12 Months",
+      "context": "Sparkbridge Incubator",
+      "year": "2023 — 2024",
+      "summary": "Ten fully functional MVPs delivered within a year on Next.js and Supabase's serverless architecture, meeting tight deadlines without dropping quality.",
+      "contributions": ["Next.js front ends", "Supabase serverless back ends"],
+      "stack": ["Next.js", "Supabase"],
+      "metricValue": "10",
+      "metricLabel": "MVPs shipped",
+      "linkHref": "",
+      "linkLabel": ""
+    },
+    {
+      "id": "commerce",
+      "title": "E-commerce Platform & AR Admin",
+      "context": "Minogar",
+      "year": "2022 — 2023",
+      "summary": "A Next.js storefront using SSR and SSG for performance and SEO, plus a React admin panel for uploading and managing 3D models for AR web experiences.",
+      "contributions": ["Reduced page load time and increased organic traffic", "3D model management for AR product experiences"],
+      "stack": ["Next.js", "React", "SSR / SSG"],
+      "metricValue": "",
+      "metricLabel": "",
+      "linkHref": "",
+      "linkLabel": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "Associate's degree",
+      "field": "Software Engineering",
+      "school": "Shahab Danesh University",
+      "schoolUrl": "https://www.linkedin.com/school/shdu/"
+    }
+  ],
+  "languages": [
+    { "name": "Persian", "level": "Native proficiency" },
+    { "name": "English", "level": "Bilingual proficiency" }
+  ],
+  "updatedAt": "2026-10-21T00:00:00.000Z"
+}

@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+next-env.d.ts
+tsconfig.tsbuildinfo
+.env*.local
+.env
+
+# Editable runtime data: keep site.json + uploads in git if you want them versioned,
+# but never the automatic backups.
+content/backups/*
+!content/backups/.gitkeep

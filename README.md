@@ -1,0 +1,63 @@
+# Saman DorEmami — Portfolio (Next.js edition)
+
+A 3D animated portfolio built on **Next.js (App Router)**, with **all content driven by one JSON file** and an **/admin editor** that changes that file (and the uploaded images/PDFs) at runtime — no database.
+
+## Run
+
+```bash
+npm install
+cp .env.example .env.local     # then set ADMIN_PASSWORD and SESSION_SECRET (a .env.local is already generated here)
+npm run dev                    # http://localhost:3000  — editor at /admin
+# production
+npm run build && npm start
+```
+
+## How it works
+
+```
+content/
+  site.json      ← every text, link, date, SEO field (validated by src/lib/schema.ts)
+  uploads/       ← images + résumé PDF managed from /admin, served at /media/<file>
+  backups/       ← automatic snapshot of the previous site.json on every save (latest 40)
+```
+
+- The public page is **statically generated** from `site.json` (fast, fully crawlable HTML, no JS needed to read it).
+- Saving in `/admin` validates the data, snapshots the old file, atomically rewrites `site.json`, then calls `revalidatePath` — the static page, sitemap, robots and social card are regenerated immediately.
+- Uploads live in `content/uploads` and are served by a route (`/media/*`), **not** from `public/`, because Next.js only serves `public/` files that existed at build time.
+- The 3D scene, GSAP animations, theme switch, cursor, preloader are ported 1:1 as client islands; the markup itself is server-rendered.
+
+## Admin (`/admin`)
+
+Sign in with `ADMIN_PASSWORD`. Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
+`Ctrl/⌘ + S` saves. Replacing a file keeps its URL, so nothing else needs changing. Deleting a file that is still referenced asks for confirmation.
+
+Security: signed httpOnly + SameSite=Strict cookie, constant-time password check, login throttling, same-origin check on every write, every API route re-checks the session, uploads validated by extension **and** magic bytes (SVGs are served sandboxed), strict link-scheme allow-list in the schema, `noindex` + `no-store` on the admin.
+
+### Text markup in the JSON
+`*accent*` → accent style (headings), `**bold**` → bold (hero intro). Nothing else is interpreted, so content cannot inject HTML.
+
+## SEO included
+
+`generateMetadata` (title, description, keywords, canonical, robots, Open Graph, Twitter) · JSON-LD (`WebSite`, `ProfilePage`, `Person`) · `sitemap.xml` (with portrait image) · `robots.txt` · generated favicon and fallback social card (`/og`) · `next/font` self-hosted fonts · semantic landmarks, one `<h1>` · full content in the initial HTML.
+
+**Before going live:** set the public address in *Site & SEO → Public address* (or `SITE_URL`), and upload a 1200×630 share image.
+
+## Hosting — important
+
+Because the editor writes files, it needs a **Node server with a persistent disk** (VPS, Docker + volume, Railway/Fly/Render with a disk). It will **not** persist edits on read-only/serverless hosts such as Vercel. Point `CONTENT_DIR` at the persistent volume (it must contain `site.json`; copy the bundled `content/` there once).
+Run a single instance (concurrent writes are serialised per process, and edits conflict-check with an ETag).
+
+## Env
+
+| Variable | Purpose |
+| --- | --- |
+| `ADMIN_PASSWORD` | Admin login (required for `/admin`) |
+| `SESSION_SECRET` | ≥16 random chars; signs the session cookie |
+| `SITE_URL` | Optional; overrides the public address saved in the admin |
+| `CONTENT_DIR` | Optional; where `site.json`, `uploads/`, `backups/` live |
+
+## Adding a new editable field
+
+1. Add it to `src/lib/schema.ts` and `content/site.json`.
+2. Add one line to `src/admin/tabs.ts` (the form is described as data).
+3. Render it in the relevant `src/sections/*.tsx`.
