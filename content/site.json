@@ -1,12 +1,12 @@
 {
   "site": {
     "url": "",
-    "name": "Saman DorEmami",
+    "name": "Reza Hashemi",
     "language": "en"
   },
   "seo": {
-    "title": "Saman DorEmami — Senior Front-end Developer",
-    "description": "Saman DorEmami — Senior Front-end Developer. 4+ years building scalable, high-performance web applications with React, Next.js and TypeScript.",
+    "title": "Reza Hashemi — Senior Front-end Developer",
+    "description": "Reza Hashemi — Senior Front-end Developer. 4+ years building scalable, high-performance web applications with React, Next.js and TypeScript.",
     "keywords": [
       "Saman DorEmami",
       "Front-end developer",
@@ -17,7 +17,7 @@
       "Portfolio"
     ],
     "ogImage": "/media/saman-avatar.jpg",
-    "ogImageAlt": "Saman DorEmami — Senior Front-end Developer",
+    "ogImageAlt": "Reza Hashemi — Senior Front-end Developer",
     "twitterHandle": "",
     "noindex": false
   },
@@ -34,7 +34,11 @@
     "resumeFileName": "Saman_DorEmami_Resume.pdf",
     "summary": "Front-end developer with 4+ years of experience building clean, scalable, and high-performance web applications. Proficient in Next.js, React, and TypeScript/JavaScript, with a strong focus on user experience, maintainable code, and modern frontend technologies.",
     "heroIntro": "I build **clean, scalable, high-performance** web applications with **Next.js, React and TypeScript** — from role-based CRM platforms and monorepos to real-time healthcare systems.",
-    "core": ["Next.js", "React", "TypeScript"]
+    "core": [
+      "Next.js",
+      "React",
+      "TypeScript"
+    ]
   },
   "contacts": [
     {
@@ -71,12 +75,33 @@
       "tag": "About",
       "title": "Front-end, *end to end.*",
       "statement": "I build interfaces that stay fast and maintainable as products grow — with a strong focus on user experience and clean, testable code.",
-      "statementAccent": ["fast", "maintainable", "user", "experience"],
+      "statementAccent": [
+        "fast",
+        "maintainable",
+        "user",
+        "experience"
+      ],
       "stats": [
-        { "value": 4, "suffix": "+", "label": "years of front-end experience" },
-        { "value": 10, "suffix": "", "label": "MVPs delivered in 12 months" },
-        { "value": 2000, "suffix": "+", "label": "active users on dashboards I led" },
-        { "value": 4, "suffix": "", "label": "companies, incl. remote US & Canadian teams" }
+        {
+          "value": 4,
+          "suffix": "+",
+          "label": "years of front-end experience"
+        },
+        {
+          "value": 10,
+          "suffix": "",
+          "label": "MVPs delivered in 12 months"
+        },
+        {
+          "value": 2000,
+          "suffix": "+",
+          "label": "active users on dashboards I led"
+        },
+        {
+          "value": 4,
+          "suffix": "",
+          "label": "companies, incl. remote US & Canadian teams"
+        }
       ],
       "strengths": [
         {
@@ -136,7 +161,12 @@
           "icon": "code",
           "showCard": false,
           "wide": false,
-          "items": ["Next.js", "React.js", "TypeScript", "JavaScript"]
+          "items": [
+            "Next.js",
+            "React.js",
+            "TypeScript",
+            "JavaScript"
+          ]
         },
         {
           "id": "styling",
@@ -145,7 +175,12 @@
           "icon": "palette",
           "showCard": true,
           "wide": false,
-          "items": ["Tailwind", "Shadcn UI", "SCSS / SASS", "Material UI"]
+          "items": [
+            "Tailwind",
+            "Shadcn UI",
+            "SCSS / SASS",
+            "Material UI"
+          ]
         },
         {
           "id": "state",
@@ -154,7 +189,10 @@
           "icon": "database",
           "showCard": true,
           "wide": false,
-          "items": ["Zustand", "Redux Toolkit"]
+          "items": [
+            "Zustand",
+            "Redux Toolkit"
+          ]
         },
         {
           "id": "testing",
@@ -163,7 +201,12 @@
           "icon": "flask-conical",
           "showCard": true,
           "wide": false,
-          "items": ["Vitest", "React Testing Library", "Unit Testing", "Integration Testing"]
+          "items": [
+            "Vitest",
+            "React Testing Library",
+            "Unit Testing",
+            "Integration Testing"
+          ]
         },
         {
           "id": "realtime",
@@ -172,7 +215,13 @@
           "icon": "radio",
           "showCard": true,
           "wide": false,
-          "items": ["WebSocket (SignalR)", "Service Workers", "Push Notifications", "Offline Support", "PWA"]
+          "items": [
+            "WebSocket (SignalR)",
+            "Service Workers",
+            "Push Notifications",
+            "Offline Support",
+            "PWA"
+          ]
         },
         {
           "id": "practices",
@@ -181,7 +230,15 @@
           "icon": "git-branch",
           "showCard": true,
           "wide": true,
-          "items": ["Git (Husky, Conventional Commits)", "Agile / Scrum", "Storybook", "Clean Code", "SOLID", "DRY", "Design Patterns"]
+          "items": [
+            "Git (Husky, Conventional Commits)",
+            "Agile / Scrum",
+            "Storybook",
+            "Clean Code",
+            "SOLID",
+            "DRY",
+            "Design Patterns"
+          ]
         }
       ]
     },
@@ -237,7 +294,14 @@
         "Built complex sales and operational workflows including Commissions, Discounts, Sales Tax, Refunds, Contracts, Order Notes, Announcements, and Analytics, integrating them with backend APIs and real-time updates.",
         "Established frontend testing practices using Vitest, React Testing Library, and MSW, while applying Clean Code, SOLID, DRY, and Design Patterns to maintain a scalable and maintainable codebase."
       ],
-      "stack": ["React", "TypeScript", "Turborepo", "Vitest", "React Testing Library", "MSW"]
+      "stack": [
+        "React",
+        "TypeScript",
+        "Turborepo",
+        "Vitest",
+        "React Testing Library",
+        "MSW"
+      ]
     },
     {
       "company": "Rayteb",
@@ -252,7 +316,11 @@
         "Engineered a doctor profile platform using Next.js, showcasing doctors' backgrounds, experience, and professional history, which contributed to higher patient engagement with doctor profiles.",
         "Created a React-based dashboard for doctors to manage and prescribe medications, streamlining the prescription workflow and reducing time spent on administrative tasks."
       ],
-      "stack": ["Next.js", "React", "WebSocket"]
+      "stack": [
+        "Next.js",
+        "React",
+        "WebSocket"
+      ]
     },
     {
       "company": "Sparkbridge Incubator Ltd",
@@ -266,7 +334,11 @@
         "Mentored junior developers, conducted in-depth code reviews to ensure high code quality, and led the development of two scalable React-based dashboards serving over 2,000 active users.",
         "Delivered 10 fully functional MVPs within 12 months using Next.js and Supabase's serverless architecture, consistently meeting tight deadlines while maintaining high-quality standards."
       ],
-      "stack": ["React", "Next.js", "Supabase"]
+      "stack": [
+        "React",
+        "Next.js",
+        "Supabase"
+      ]
     },
     {
       "company": "Minogar",
@@ -279,7 +351,11 @@
         "Designed and developed an e-commerce platform using Next.js, implementing advanced rendering strategies (SSR & SSG) to optimize performance and SEO, reducing page load time and increasing organic traffic.",
         "Launched a React-based admin panel for uploading and managing 3D models for AR web experiences, including comprehensive product management features."
       ],
-      "stack": ["Next.js", "React", "SSR / SSG"]
+      "stack": [
+        "Next.js",
+        "React",
+        "SSR / SSG"
+      ]
     }
   ],
   "projects": [
@@ -294,7 +370,13 @@
         "Migrated the frontend to a Turborepo monorepo with shared packages",
         "Testing practice with Vitest, React Testing Library and MSW"
       ],
-      "stack": ["React", "TypeScript", "Turborepo", "Vitest", "MSW"],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Turborepo",
+        "Vitest",
+        "MSW"
+      ],
       "metricValue": "",
       "metricLabel": "",
       "linkHref": "https://usedconex.com/",
@@ -311,7 +393,9 @@
         "Integrations with government insurance organizations",
         "Cut average appointment booking time significantly"
       ],
-      "stack": ["Next.js"],
+      "stack": [
+        "Next.js"
+      ],
       "metricValue": "",
       "metricLabel": "",
       "linkHref": "",
@@ -323,8 +407,14 @@
       "context": "Rayteb",
       "year": "2024 — 2025",
       "summary": "A live chat system connecting patients with support representatives, measurably improving response times and customer satisfaction.",
-      "contributions": ["Real-time messaging over WebSocket", "Built with React"],
-      "stack": ["React", "WebSocket"],
+      "contributions": [
+        "Real-time messaging over WebSocket",
+        "Built with React"
+      ],
+      "stack": [
+        "React",
+        "WebSocket"
+      ],
       "metricValue": "",
       "metricLabel": "",
       "linkHref": "",
@@ -336,8 +426,14 @@
       "context": "Sparkbridge Incubator",
       "year": "2023 — 2024",
       "summary": "Led the front-end team that migrated two legacy websites to React single-page applications and built two scalable dashboards.",
-      "contributions": ["Improved page load speed and user retention", "Mentored junior developers and ran code reviews"],
-      "stack": ["React", "SPA"],
+      "contributions": [
+        "Improved page load speed and user retention",
+        "Mentored junior developers and ran code reviews"
+      ],
+      "stack": [
+        "React",
+        "SPA"
+      ],
       "metricValue": "2,000+",
       "metricLabel": "active users",
       "linkHref": "https://www.sparkbridge.ca/about",
@@ -349,8 +445,14 @@
       "context": "Sparkbridge Incubator",
       "year": "2023 — 2024",
       "summary": "Ten fully functional MVPs delivered within a year on Next.js and Supabase's serverless architecture, meeting tight deadlines without dropping quality.",
-      "contributions": ["Next.js front ends", "Supabase serverless back ends"],
-      "stack": ["Next.js", "Supabase"],
+      "contributions": [
+        "Next.js front ends",
+        "Supabase serverless back ends"
+      ],
+      "stack": [
+        "Next.js",
+        "Supabase"
+      ],
       "metricValue": "10",
       "metricLabel": "MVPs shipped",
       "linkHref": "",
@@ -362,8 +464,15 @@
       "context": "Minogar",
       "year": "2022 — 2023",
       "summary": "A Next.js storefront using SSR and SSG for performance and SEO, plus a React admin panel for uploading and managing 3D models for AR web experiences.",
-      "contributions": ["Reduced page load time and increased organic traffic", "3D model management for AR product experiences"],
-      "stack": ["Next.js", "React", "SSR / SSG"],
+      "contributions": [
+        "Reduced page load time and increased organic traffic",
+        "3D model management for AR product experiences"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "SSR / SSG"
+      ],
       "metricValue": "",
       "metricLabel": "",
       "linkHref": "",
@@ -379,8 +488,14 @@
     }
   ],
   "languages": [
-    { "name": "Persian", "level": "Native proficiency" },
-    { "name": "English", "level": "Bilingual proficiency" }
+    {
+      "name": "Persian",
+      "level": "Native proficiency"
+    },
+    {
+      "name": "English",
+      "level": "Bilingual proficiency"
+    }
   ],
-  "updatedAt": "2026-10-21T00:00:00.000Z"
+  "updatedAt": "2026-10-22T09:25:35.967Z"
 }
