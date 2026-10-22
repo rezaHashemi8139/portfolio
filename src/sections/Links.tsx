@@ -1,12 +1,13 @@
 import { ArrowUpRight, Globe } from 'lucide-react';
 import type { LinkType, SiteContent } from '@/lib/schema';
 import { SectionHeading } from '@/components/SectionHeading';
-import { GitHubIcon, InstagramIcon, LinkedInIcon, TelegramIcon, XIcon, YouTubeIcon } from '@/components/Icons';
+import { GitHubIcon, InstagramIcon, LinkedInIcon, StackOverflowIcon, TelegramIcon, XIcon, YouTubeIcon } from '@/components/Icons';
 import { LinksFx } from './LinksFx';
 
 function LinkIcon({ type }: { type: LinkType }) {
   if (type === 'linkedin') return <LinkedInIcon />;
   if (type === 'github') return <GitHubIcon />;
+  if (type === 'stackoverflow') return <StackOverflowIcon />;
   if (type === 'telegram') return <TelegramIcon />;
   if (type === 'instagram') return <InstagramIcon />;
   if (type === 'x') return <XIcon />;

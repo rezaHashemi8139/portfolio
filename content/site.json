@@ -78,13 +78,13 @@
     {
       "type": "stackoverflow",
       "label": "Stack Overflow",
-      "value": "stackoverflow.com/users/9726391",
+      "value": "stackoverflow.com",
       "href": "https://www.stackoverflow.com/users/9726391/reza-hashemi"
     },
     {
       "type": "telegram",
       "label": "Telegram",
-      "value": "t.me",
+      "value": "telegram.me",
       "href": "https://t.me/rehadev"
     }
   ],
@@ -628,5 +628,5 @@
       "level": "Intermediate"
     }
   ],
-  "updatedAt": "2026-10-22T12:09:48.764Z"
+  "updatedAt": "2026-10-22T12:12:56.087Z"
 }

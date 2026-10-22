@@ -27,5 +27,5 @@ export type IconName = (typeof ICON_NAMES)[number];
 export const CONTACT_TYPES = ['email', 'phone', 'github', 'linkedin', 'website'] as const;
 export type ContactType = (typeof CONTACT_TYPES)[number];
 
-export const LINK_TYPES = ['linkedin', 'github', 'telegram', 'instagram', 'x', 'youtube', 'website'] as const;
+export const LINK_TYPES = ['linkedin', 'github', 'stackoverflow', 'telegram', 'instagram', 'x', 'youtube', 'website'] as const;
 export type LinkType = (typeof LINK_TYPES)[number];
