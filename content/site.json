@@ -19,7 +19,7 @@
       "Redis",
       "Portfolio"
     ],
-    "ogImage": "/media/reza-avatar.jpg",
+    "ogImage": "/media/1790763232539-p17ibk7c.jpg",
     "ogImageAlt": "Reza Hashemi — Front-end & Node.js Developer",
     "twitterHandle": "",
     "noindex": false
@@ -27,10 +27,10 @@
   "profile": {
     "firstName": "Reza",
     "lastName": "Hashemi",
-    "title": " Back-end & Front-end Developer",
+    "title": "Back-end & Front-end Developer",
     "yearsOfExperience": "{years}+",
-    "photo": "/media/reza-portrait.webp",
-    "photoFallback": "/media/reza-portrait.jpg",
+    "photo": "/media/1790763232539-p17ibk7c.jpg",
+    "photoFallback": "/media/1790763232539-p17ibk7c.jpg",
     "photoAlt": "Portrait of Reza Hashemi",
     "portraitCaption": "Back-end · Front-end",
     "resumeFile": "/media/reza-hashemi-resume.pdf",
@@ -597,5 +597,5 @@
       "level": "Intermediate"
     }
   ],
-  "updatedAt": "2026-10-22T10:00:00.000Z"
+  "updatedAt": "2026-10-22T11:31:39.723Z"
 }
