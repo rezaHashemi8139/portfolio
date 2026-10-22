@@ -27,19 +27,20 @@
   "profile": {
     "firstName": "Reza",
     "lastName": "Hashemi",
-    "title": "Front-end & Node.js Developer",
+    "title": " Back-end & Front-end Developer",
     "yearsOfExperience": "{years}+",
     "photo": "/media/reza-portrait.webp",
     "photoFallback": "/media/reza-portrait.jpg",
     "photoAlt": "Portrait of Reza Hashemi",
-    "portraitCaption": "Backend · Front-end",
+    "portraitCaption": "Back-end · Front-end",
     "resumeFile": "/media/reza-hashemi-resume.pdf",
     "resumeFileName": "Reza_Hashemi_Resume.pdf",
     "summary": "Passionate developer with {years}+ years of experience, interested in front-end and programming. I've mastered React, Redux and Next.js and used them across numerous projects; today I work as a Node.js backend developer with MongoDB, Redis, sockets and push notifications. I love clean code, keep learning new skills and enjoy working in dynamic teams.",
     "heroIntro": "I build **fast, clean** web applications with **React and Next.js** — and today I power a **purchasing, logistics and warehouse platform** on the backend with **Node.js, MongoDB and Redis**.",
     "core": [
-      "Node.js",
+      "Express",
       "React",
+      "Node.js",
       "Next.js",
       "MongoDB"
     ]
@@ -312,7 +313,7 @@
     },
     {
       "company": "Haal (Asan Pardakht Health)",
-      "companyUrl": "",
+      "companyUrl": "https://haal.ir",
       "logo": "/media/logo-haal.png",
       "role": "Front-end Developer",
       "start": "2022-06",
@@ -337,7 +338,7 @@
     },
     {
       "company": "Gajino (Gajmarket)",
-      "companyUrl": "",
+      "companyUrl": "https://gajino.ir",
       "logo": "/media/logo-gajino.png",
       "role": "Front-end Developer",
       "start": "2020-11",
