@@ -32,7 +32,7 @@
     "photo": "/media/reza-portrait.webp",
     "photoFallback": "/media/reza-portrait.jpg",
     "photoAlt": "Portrait of Reza Hashemi",
-    "portraitCaption": "Front-end · Node.js",
+    "portraitCaption": "Backend · Front-end",
     "resumeFile": "/media/reza-hashemi-resume.pdf",
     "resumeFileName": "Reza_Hashemi_Resume.pdf",
     "summary": "Passionate developer with {years}+ years of experience, interested in front-end and programming. I've mastered React, Redux and Next.js and used them across numerous projects; today I work as a Node.js backend developer with MongoDB, Redis, sockets and push notifications. I love clean code, keep learning new skills and enjoy working in dynamic teams.",
