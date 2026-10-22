@@ -67,19 +67,25 @@
       "type": "linkedin",
       "label": "LinkedIn",
       "value": "linkedin.com",
-      "href": "https://www.linkedin.com/"
+      "href": "https://www.linkedin.com/in/reza-hashemi-487b2566/"
     },
     {
       "type": "github",
       "label": "GitHub",
       "value": "github.com",
-      "href": "https://github.com/"
+      "href": "https://github.com/rezaHashemi8139"
+    },
+    {
+      "type": "stackoverflow",
+      "label": "Stack Overflow",
+      "value": "stackoverflow.com/users/9726391",
+      "href": "https://www.stackoverflow.com/users/9726391/reza-hashemi"
     },
     {
       "type": "telegram",
       "label": "Telegram",
       "value": "t.me",
-      "href": "https://t.me/"
+      "href": "https://t.me/rehadev"
     }
   ],
   "sections": {
@@ -622,5 +628,5 @@
       "level": "Intermediate"
     }
   ],
-  "updatedAt": "2026-10-22T11:31:39.723Z"
+  "updatedAt": "2026-10-22T12:09:48.764Z"
 }
