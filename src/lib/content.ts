@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { contentSchema, formatIssues, type SiteContent } from './schema';
+import { withComputedValues } from './site';
 
 /**
  * File-backed "CMS". Everything editable lives under CONTENT_DIR (default ./content):
@@ -45,8 +46,8 @@ function parseRaw(raw: string): SiteContent {
   return result.data;
 }
 
-/** Cached per request, so generateMetadata + the page share one read. */
-export const getContent = cache(async (): Promise<SiteContent> => parseRaw(await fs.readFile(CONTENT_FILE, 'utf8')));
+/** Cached per request, so generateMetadata + the page share one read. Date-derived values ({years}) are filled in here. */
+export const getContent = cache(async (): Promise<SiteContent> => withComputedValues(parseRaw(await fs.readFile(CONTENT_FILE, 'utf8'))));
 
 /** Uncached read for the admin: also returns the version tag used for conflict detection. */
 export async function readContentForAdmin(): Promise<{ content: SiteContent; etag: string }> {

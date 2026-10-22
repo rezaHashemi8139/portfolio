@@ -108,6 +108,8 @@ export const contentSchema = z.object({
       stats: list(
         z.object({
           value: z.number().int().min(0).max(1_000_000_000),
+          /** On = ignore `value` and show the total years of experience, calculated from the job dates. */
+          auto: z.boolean().default(false),
           suffix: short(6),
           label: short(100),
         }),

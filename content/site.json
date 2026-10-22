@@ -6,7 +6,7 @@
   },
   "seo": {
     "title": "Reza Hashemi — Front-end & Node.js Developer",
-    "description": "Reza Hashemi — Front-end & Node.js Developer. 9+ years building web applications with React and Next.js, and Node.js backends with MongoDB and Redis.",
+    "description": "Reza Hashemi — Front-end & Node.js Developer. {years}+ years building web applications with React and Next.js, and Node.js backends with MongoDB and Redis.",
     "keywords": [
       "Reza Hashemi",
       "Front-end developer",
@@ -28,14 +28,14 @@
     "firstName": "Reza",
     "lastName": "Hashemi",
     "title": "Front-end & Node.js Developer",
-    "yearsOfExperience": "9+",
+    "yearsOfExperience": "{years}+",
     "photo": "/media/reza-portrait.webp",
     "photoFallback": "/media/reza-portrait.jpg",
     "photoAlt": "Portrait of Reza Hashemi",
     "portraitCaption": "Front-end · Node.js",
     "resumeFile": "/media/reza-hashemi-resume.pdf",
     "resumeFileName": "Reza_Hashemi_Resume.pdf",
-    "summary": "Passionate developer with 9+ years of experience, interested in front-end and programming. I've mastered React, Redux and Next.js and used them across numerous projects; today I work as a Node.js backend developer with MongoDB, Redis, sockets and push notifications. I love clean code, keep learning new skills and enjoy working in dynamic teams.",
+    "summary": "Passionate developer with {years}+ years of experience, interested in front-end and programming. I've mastered React, Redux and Next.js and used them across numerous projects; today I work as a Node.js backend developer with MongoDB, Redis, sockets and push notifications. I love clean code, keep learning new skills and enjoy working in dynamic teams.",
     "heroIntro": "I build **fast, clean** web applications with **React and Next.js** — and today I power a **purchasing, logistics and warehouse platform** on the backend with **Node.js, MongoDB and Redis**.",
     "core": [
       "Node.js",
@@ -74,16 +74,25 @@
       "stats": [
         {
           "value": 9,
+          "auto": true,
           "suffix": "+",
           "label": "years of web development"
         },
         {
+          "value": 8,
+          "auto": false,
+          "suffix": "+",
+          "label": "years as a front-end developer"
+        },
+        {
           "value": 7,
+          "auto": false,
           "suffix": "",
           "label": "companies, from startups to health and logistics platforms"
         },
         {
           "value": 3,
+          "auto": false,
           "suffix": "",
           "label": "companies where I built real-time features"
         }
@@ -234,7 +243,7 @@
     "experience": {
       "tag": "Experience",
       "title": "Where I’ve *Built*",
-      "intro": "From call-center and municipal-revenue apps to a health platform and a logistics backend — nine years across front end and Node.js.",
+      "intro": "From call-center and municipal-revenue apps to a health platform and a logistics backend — {years}+ years across front end and Node.js.",
       "highlightTerms": [
         "push notifications",
         "socket programming",
