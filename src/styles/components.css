@@ -446,8 +446,7 @@ main,
   flex-direction: column;
   justify-content: flex-end;
   gap: 28px;
-  padding: calc(env(safe-area-inset-top, 0px) + 100px) max(24px, env(safe-area-inset-right, 0px))
-    calc(env(safe-area-inset-bottom, 0px) + 32px) max(24px, env(safe-area-inset-left, 0px));
+  padding: calc(env(safe-area-inset-top, 0px) + 100px) max(24px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 32px) max(24px, env(safe-area-inset-left, 0px));
   background: var(--scrim);
   -webkit-backdrop-filter: blur(28px) saturate(140%);
   backdrop-filter: blur(28px) saturate(140%);

@@ -3,8 +3,9 @@ import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypt
 import { cookies } from 'next/headers';
 
 /**
- * Single-admin auth: one password (ADMIN_PASSWORD) → a signed, expiring, httpOnly cookie.
- * The signing key mixes in the password, so changing it signs every session out.
+ * Single-admin auth: a username (ADMIN_USERNAME, default "admin") and password (ADMIN_PASSWORD)
+ * → a signed, expiring, httpOnly cookie. The signing key mixes in both, so changing either
+ * signs every session out.
  */
 export const COOKIE_NAME = 'sd_admin';
 export const SESSION_SECONDS = 60 * 60 * 12;
@@ -13,12 +14,18 @@ export function adminConfigured(): boolean {
   return Boolean(process.env.ADMIN_PASSWORD) && (process.env.SESSION_SECRET?.length ?? 0) >= 16;
 }
 
-const key = () => `${process.env.SESSION_SECRET}\u0000${process.env.ADMIN_PASSWORD}`;
+const adminUsername = () => process.env.ADMIN_USERNAME?.trim() || 'admin';
+
+const key = () => `${process.env.SESSION_SECRET}\u0000${adminUsername()}\u0000${process.env.ADMIN_PASSWORD}`;
 const sign = (payload: string) => createHmac('sha256', key()).update(payload).digest('base64url');
 const digest = (v: string) => createHash('sha256').update(v).digest();
 
-export function passwordMatches(input: string): boolean {
-  return adminConfigured() && timingSafeEqual(digest(input), digest(process.env.ADMIN_PASSWORD as string));
+export function credentialsMatch(username: string, password: string): boolean {
+  if (!adminConfigured()) return false;
+  // Both are always compared (no early exit), so timing never reveals which one was wrong.
+  const userOk = timingSafeEqual(digest(username.trim()), digest(adminUsername()));
+  const passOk = timingSafeEqual(digest(password), digest(process.env.ADMIN_PASSWORD as string));
+  return userOk && passOk;
 }
 
 export function createSessionToken(): string {

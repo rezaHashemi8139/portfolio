@@ -28,10 +28,10 @@ content/
 
 ## Admin (`/admin`)
 
-Sign in with `ADMIN_PASSWORD`. Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
+Sign in with `ADMIN_USERNAME` (default `admin`) and `ADMIN_PASSWORD`. Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
 `Ctrl/⌘ + S` saves. Replacing a file keeps its URL, so nothing else needs changing. Deleting a file that is still referenced asks for confirmation.
 
-Security: signed httpOnly + SameSite=Strict cookie, constant-time password check, login throttling, same-origin check on every write, every API route re-checks the session, uploads validated by extension **and** magic bytes (SVGs are served sandboxed), strict link-scheme allow-list in the schema, `noindex` + `no-store` on the admin.
+Security: signed httpOnly + SameSite=Strict cookie, constant-time username + password check, login throttling, same-origin check on every write, every API route re-checks the session, uploads validated by extension **and** magic bytes (SVGs are served sandboxed), strict link-scheme allow-list in the schema, `noindex` + `no-store` on the admin.
 
 ### Text markup in the JSON
 `*accent*` → accent style (headings), `**bold**` → bold (hero intro). Nothing else is interpreted, so content cannot inject HTML.
@@ -51,7 +51,8 @@ Run a single instance (concurrent writes are serialised per process, and edits c
 
 | Variable | Purpose |
 | --- | --- |
-| `ADMIN_PASSWORD` | Admin login (required for `/admin`) |
+| `ADMIN_USERNAME` | Admin login name; optional, defaults to `admin` |
+| `ADMIN_PASSWORD` | Admin login password (required for `/admin`) |
 | `SESSION_SECRET` | ≥16 random chars; signs the session cookie |
 | `SITE_URL` | Optional; overrides the public address saved in the admin |
 | `CONTENT_DIR` | Optional; where `site.json`, `uploads/`, `backups/` live |

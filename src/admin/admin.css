@@ -87,25 +87,31 @@ svg {
   text-decoration: none;
   cursor: pointer;
 }
+
 .btn:hover:not(:disabled) {
   border-color: var(--a-accent);
 }
+
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 .btn--primary {
   background: var(--a-accent);
   border-color: var(--a-accent);
   color: var(--a-accent-fg);
 }
+
 .btn--ghost {
   background: transparent;
 }
+
 .btn--sm {
   padding: 5px 10px;
   font-size: 13px;
 }
+
 .icon-btn {
   display: inline-grid;
   place-items: center;
@@ -117,18 +123,22 @@ svg {
   color: var(--a-muted);
   cursor: pointer;
 }
+
 .icon-btn:hover:not(:disabled) {
   border-color: var(--a-line);
   color: var(--a-fg);
 }
+
 .icon-btn:disabled {
   opacity: 0.35;
   cursor: default;
 }
+
 .icon-btn--danger:hover:not(:disabled) {
   color: var(--a-danger);
   border-color: var(--a-danger);
 }
+
 .link {
   background: none;
   border: 0;
@@ -138,6 +148,7 @@ svg {
   text-decoration: underline;
   cursor: pointer;
 }
+
 :focus-visible {
   outline: 2px solid var(--a-accent);
   outline-offset: 2px;
@@ -150,6 +161,7 @@ svg {
   place-items: center;
   padding: 24px 16px;
 }
+
 .login__card {
   width: min(440px, 100%);
   background: var(--a-panel);
@@ -159,10 +171,12 @@ svg {
   display: grid;
   gap: 14px;
 }
+
 .login__form {
   display: grid;
   gap: 10px;
 }
+
 .code-block {
   margin: 0;
   padding: 12px;
@@ -188,23 +202,28 @@ svg {
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--a-line);
 }
+
 .topbar__title {
   display: flex;
   align-items: baseline;
   gap: 12px;
 }
+
 .topbar__title h1 {
   font-size: 18px;
 }
+
 .topbar__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
+
 .state {
   font-size: 13px;
   color: var(--a-muted);
 }
+
 .state.is-dirty {
   color: var(--a-danger);
   font-weight: 600;
@@ -218,6 +237,7 @@ svg {
   margin: 0 auto;
   padding: 20px;
 }
+
 .tabs {
   position: sticky;
   top: 72px;
@@ -225,12 +245,14 @@ svg {
   display: grid;
   gap: 2px;
 }
+
 .tabs hr {
   width: 100%;
   border: 0;
   border-top: 1px solid var(--a-line);
   margin: 8px 0;
 }
+
 .tab {
   display: flex;
   align-items: center;
@@ -244,14 +266,17 @@ svg {
   text-align: left;
   cursor: pointer;
 }
+
 .tab:hover {
   background: var(--a-line);
 }
+
 .tab.is-active {
   background: var(--a-accent);
   color: var(--a-accent-fg);
   font-weight: 600;
 }
+
 .tab__err {
   margin-left: auto;
   min-width: 20px;
@@ -268,9 +293,11 @@ svg {
   gap: 16px;
   min-width: 0;
 }
+
 .page-title {
   font-size: 22px;
 }
+
 .panel {
   background: var(--a-panel);
   border: 1px solid var(--a-line);
@@ -279,6 +306,7 @@ svg {
   display: grid;
   gap: 16px;
 }
+
 .panel h3 {
   font-size: 16px;
 }
@@ -288,34 +316,41 @@ svg {
   display: grid;
   gap: 6px;
 }
+
 .field__top {
   display: flex;
   justify-content: space-between;
   gap: 8px;
 }
+
 .field label,
 .field__top label {
   font-weight: 600;
   font-size: 14px;
 }
+
 .field__hint {
   margin: 0;
   color: var(--a-muted);
   font-size: 13px;
 }
+
 .field__error {
   margin: 0;
   color: var(--a-danger);
   font-size: 13px;
   font-weight: 600;
 }
+
 .counter {
   font-size: 12px;
   color: var(--a-muted);
 }
+
 .counter.is-over {
   color: var(--a-danger);
 }
+
 .has-error input,
 .has-error textarea,
 .has-error select {
@@ -336,27 +371,32 @@ textarea {
   color: var(--a-fg);
   font: inherit;
 }
+
 textarea {
   resize: vertical;
 }
+
 textarea.code {
   min-height: 60vh;
   font: 13px/1.5 ui-monospace, Menlo, Consolas, monospace;
   white-space: pre;
   tab-size: 2;
 }
+
 .field--check label {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 600;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
+
 .inline-check {
   display: inline-flex;
   align-items: center;
@@ -373,6 +413,7 @@ textarea.code {
   border-radius: 8px;
   background: var(--a-input);
 }
+
 .chip-edit {
   display: inline-flex;
   align-items: center;
@@ -380,6 +421,7 @@ textarea.code {
   border-radius: 999px;
   padding-left: 10px;
 }
+
 .chip-edit input {
   border: 0;
   background: transparent;
@@ -388,9 +430,11 @@ textarea.code {
   min-width: 3ch;
   padding: 3px 0;
 }
+
 .chip-edit input:focus {
   outline: none;
 }
+
 .chip-edit button {
   display: grid;
   place-items: center;
@@ -400,9 +444,11 @@ textarea.code {
   padding: 4px 6px;
   cursor: pointer;
 }
+
 .chip-edit button:hover {
   color: var(--a-danger);
 }
+
 .chip-new {
   flex: 1 1 140px;
   border: 0;
@@ -411,6 +457,7 @@ textarea.code {
   font: inherit;
   padding: 4px;
 }
+
 .chip-new:focus {
   outline: none;
 }
@@ -420,12 +467,14 @@ textarea.code {
   display: grid;
   gap: 8px;
 }
+
 .list-edit__row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 8px;
   align-items: start;
 }
+
 .icon-row {
   display: inline-flex;
   gap: 2px;
@@ -440,11 +489,13 @@ textarea.code {
   margin: 0;
   min-width: 0;
 }
+
 .array legend {
   font-weight: 700;
   padding: 0;
   margin-bottom: 8px;
 }
+
 .array__count {
   margin-left: 6px;
   padding: 0 8px;
@@ -453,12 +504,14 @@ textarea.code {
   font-size: 12px;
   font-weight: 600;
 }
+
 .card {
   border: 1px solid var(--a-line);
   border-radius: 10px;
   background: var(--a-bg);
 }
-.card > summary {
+
+.card>summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -467,15 +520,18 @@ textarea.code {
   cursor: pointer;
   list-style: none;
 }
-.card > summary::-webkit-details-marker {
+
+.card>summary::-webkit-details-marker {
   display: none;
 }
+
 .card__title {
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .card__body {
   display: grid;
   gap: 16px;
@@ -484,6 +540,7 @@ textarea.code {
   background: var(--a-panel);
   border-radius: 0 0 10px 10px;
 }
+
 .group {
   display: grid;
   gap: 14px;
@@ -496,6 +553,7 @@ textarea.code {
   gap: 12px;
   align-items: start;
 }
+
 .media-field__preview {
   display: grid;
   place-items: center;
@@ -507,11 +565,13 @@ textarea.code {
   overflow: hidden;
   color: var(--a-muted);
 }
+
 .media-field__preview img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .media-field__body {
   display: grid;
   gap: 8px;
@@ -525,21 +585,26 @@ textarea.code {
   border-radius: 10px;
   border: 1px solid var(--a-line);
 }
+
 .banner p {
   margin: 0 0 6px;
 }
+
 .banner--ok {
   background: var(--a-ok-bg);
 }
+
 .banner--error {
   background: var(--a-warn-bg);
   border-color: var(--a-danger);
 }
+
 .issues {
   margin: 0;
   padding-left: 18px;
   font-size: 13px;
 }
+
 .notice {
   margin: 0;
   padding: 8px 12px;
@@ -547,9 +612,11 @@ textarea.code {
   background: var(--a-line);
   font-size: 14px;
 }
+
 .notice--ok {
   background: var(--a-ok-bg);
 }
+
 .notice--error {
   background: var(--a-warn-bg);
   color: var(--a-danger);
@@ -560,6 +627,7 @@ textarea.code {
   display: grid;
   gap: 14px;
 }
+
 .dropzone {
   display: grid;
   justify-items: center;
@@ -570,13 +638,16 @@ textarea.code {
   text-align: center;
   color: var(--a-muted);
 }
+
 .dropzone.is-over {
   border-color: var(--a-accent);
   background: var(--a-ok-bg);
 }
+
 .dropzone p {
   margin: 0;
 }
+
 .media__bar {
   display: flex;
   align-items: center;
@@ -584,6 +655,7 @@ textarea.code {
   color: var(--a-muted);
   font-size: 13px;
 }
+
 .media__grid {
   list-style: none;
   margin: 0;
@@ -592,6 +664,7 @@ textarea.code {
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 12px;
 }
+
 .media-card {
   display: grid;
   gap: 8px;
@@ -600,10 +673,12 @@ textarea.code {
   border-radius: 10px;
   background: var(--a-bg);
 }
+
 .media-card.is-current {
   border-color: var(--a-accent);
   box-shadow: 0 0 0 1px var(--a-accent);
 }
+
 .media-card__thumb {
   display: grid;
   place-items: center;
@@ -613,35 +688,42 @@ textarea.code {
   overflow: hidden;
   color: var(--a-muted);
 }
+
 .media-card__thumb img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .media-card__thumb svg {
   width: 36px;
   height: 36px;
 }
+
 .media-card__meta {
   display: grid;
   gap: 2px;
   min-width: 0;
   font-size: 13px;
 }
+
 .media-card__meta b {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .media-card__meta span {
   color: var(--a-muted);
 }
+
 .media-card__actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
 }
+
 .badge {
   justify-self: start;
   padding: 0 8px;
@@ -651,10 +733,12 @@ textarea.code {
   font-size: 12px;
   font-weight: 600;
 }
+
 .badge--muted {
   background: var(--a-line);
   color: var(--a-muted) !important;
 }
+
 .empty {
   color: var(--a-muted);
   text-align: center;
@@ -670,9 +754,11 @@ textarea.code {
   background: var(--a-panel);
   color: var(--a-fg);
 }
+
 .modal::backdrop {
   background: rgb(0 0 0 / 0.55);
 }
+
 .modal__head {
   display: flex;
   align-items: center;
@@ -680,6 +766,7 @@ textarea.code {
   padding: 14px 18px;
   border-bottom: 1px solid var(--a-line);
 }
+
 .modal__body {
   padding: 18px;
   overflow: auto;
@@ -694,6 +781,7 @@ textarea.code {
   display: grid;
   gap: 8px;
 }
+
 .history li {
   display: flex;
   align-items: center;
@@ -703,12 +791,20 @@ textarea.code {
   border: 1px solid var(--a-line);
   border-radius: 8px;
 }
+
 .history li div {
   display: grid;
 }
+
 .history li span {
   color: var(--a-muted);
   font-size: 12px;
+}
+
+.text--center {
+  text-align: center !important;
+  /* .btn is inline-flex, where text-align does not move the content; this does. */
+  justify-content: center;
 }
 
 /* ------------------------------------------------------------------ small screens */
@@ -717,6 +813,7 @@ textarea.code {
     grid-template-columns: minmax(0, 1fr);
     padding: 12px;
   }
+
   .tabs {
     position: static;
     display: flex;
@@ -724,15 +821,19 @@ textarea.code {
     gap: 4px;
     padding-bottom: 6px;
   }
+
   .tabs hr {
     display: none;
   }
+
   .tab {
     white-space: nowrap;
   }
+
   .hide-sm {
     display: none;
   }
+
   .media-field {
     grid-template-columns: 1fr;
   }

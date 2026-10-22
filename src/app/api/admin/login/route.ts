@@ -6,7 +6,7 @@ import {
   clearFailures,
   clientKey,
   createSessionToken,
-  passwordMatches,
+  credentialsMatch,
   recordFailure,
   sameOrigin,
   throttled,
@@ -32,12 +32,13 @@ export async function POST(req: Request) {
     );
   }
 
-  const body = (await req.json().catch(() => null)) as { password?: unknown } | null;
+  const body = (await req.json().catch(() => null)) as { username?: unknown; password?: unknown } | null;
+  const username = typeof body?.username === 'string' ? body.username : '';
   const password = typeof body?.password === 'string' ? body.password : '';
-  if (!password || !passwordMatches(password)) {
+  if (!username || !password || !credentialsMatch(username, password)) {
     recordFailure(who);
     await new Promise((r) => setTimeout(r, 400));
-    return Response.json({ ok: false, message: 'Wrong password.' }, { status: 401 });
+    return Response.json({ ok: false, message: 'Wrong username or password.' }, { status: 401 });
   }
 
   clearFailures(who);
