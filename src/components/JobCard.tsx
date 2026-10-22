@@ -62,19 +62,26 @@ export function JobCard({ job, index, terms, startLabel, endLabel, durationLabel
 
       <article className="tl-card glass" aria-labelledby={`job-${index}`}>
         <div className="tl-card__head">
-          <div>
-            <h3 id={`job-${index}`}>
-              {job.companyUrl ? (
-                <a className="tl-card__company" href={job.companyUrl} target="_blank" rel="noopener noreferrer" data-cursor="hover">
-                  {job.company}
-                  <ArrowUpRight aria-hidden="true" />
-                  <span className="sr-only">(opens in a new tab)</span>
-                </a>
-              ) : (
-                <span className="tl-card__company">{job.company}</span>
-              )}
-            </h3>
-            <p className="tl-card__role">{job.role}</p>
+          <div className="tl-card__brand">
+            {job.logo ? (
+              // Plain <img>: logos are uploaded at runtime from the admin (same reason as the hero portrait).
+              // eslint-disable-next-line @next/next/no-img-element
+              <img className="tl-card__logo" src={job.logo} alt="" width={52} height={52} loading="lazy" decoding="async" />
+            ) : null}
+            <div>
+              <h3 id={`job-${index}`}>
+                {job.companyUrl ? (
+                  <a className="tl-card__company" href={job.companyUrl} target="_blank" rel="noopener noreferrer" data-cursor="hover">
+                    {job.company}
+                    <ArrowUpRight aria-hidden="true" />
+                    <span className="sr-only">(opens in a new tab)</span>
+                  </a>
+                ) : (
+                  <span className="tl-card__company">{job.company}</span>
+                )}
+              </h3>
+              <p className="tl-card__role">{job.role}</p>
+            </div>
           </div>
           {job.location ? (
             <span className="tl-card__loc">

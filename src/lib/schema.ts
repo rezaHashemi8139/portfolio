@@ -150,6 +150,8 @@ export const contentSchema = z.object({
     z.object({
       company: short(100),
       companyUrl: optionalHref,
+      /** Company logo shown beside the name. Optional, so older saved files without it stay valid. */
+      logo: mediaRef.default(''),
       role: short(100),
       start: month,
       /** Empty = current role. */

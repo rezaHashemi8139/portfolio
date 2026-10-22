@@ -724,6 +724,25 @@
   gap: 12px;
 }
 
+.tl-card__brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+/* Light tile so dark or transparent logos stay readable in both themes. */
+.tl-card__logo {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  padding: 6px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--border);
+}
+
 .tl-card__company {
   display: inline-flex;
   align-items: center;

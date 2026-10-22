@@ -182,10 +182,11 @@ export const TABS: TabDef[] = [
             label: 'Jobs',
             openFirst: true,
             itemTitle: (j) => [j.company, j.role].filter(Boolean).join(' — '),
-            blank: () => ({ company: '', companyUrl: '', role: '', start: thisMonth(), end: '', location: '', highlights: [], stack: [] }),
+            blank: () => ({ company: '', companyUrl: '', logo: '', role: '', start: thisMonth(), end: '', location: '', highlights: [], stack: [] }),
             fields: [
               { type: 'text', key: 'company', label: 'Company' },
               { type: 'text', key: 'companyUrl', label: 'Company link', placeholder: 'https://…' },
+              { type: 'media', key: 'logo', label: 'Company logo (optional)', kind: 'image', hint: 'Shown beside the company name on a light tile. A square PNG/SVG/WebP works best.' },
               { type: 'text', key: 'role', label: 'Role' },
               { type: 'month', key: 'start', label: 'Start' },
               { type: 'month', key: 'end', label: 'End', optional: true },

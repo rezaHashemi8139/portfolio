@@ -12,6 +12,7 @@
       "Front-end developer",
       "Node.js developer",
       "Backend developer",
+      "Express.js",
       "React developer",
       "Next.js developer",
       "MongoDB",
@@ -91,7 +92,7 @@
         {
           "icon": "database",
           "title": "Node.js backend",
-          "text": "Backend services on Node.js with MongoDB and Redis for a platform covering purchasing, sales, logistics, ticketing, announcements and warehouse management."
+          "text": "Backend services on Node.js and Express.js with MongoDB and Redis for a platform covering purchasing, sales, logistics, ticketing, announcements and warehouse management."
         },
         {
           "icon": "radio",
@@ -123,7 +124,7 @@
       "core": [
         {
           "name": "Node.js",
-          "note": "Backend · MongoDB · Redis",
+          "note": "Backend · Express.js · MongoDB · Redis",
           "evidence": "Backend services for usedconex's purchasing, sales, logistics, ticketing, announcements and warehouse platform."
         },
         {
@@ -162,6 +163,7 @@
           "wide": false,
           "items": [
             "Node.js",
+            "Express.js",
             "MongoDB",
             "Redis",
             "REST APIs"
@@ -244,6 +246,7 @@
         "HLS player",
         "real-time",
         "TypeScript",
+        "Express.js",
         "socket.io",
         "MongoDB",
         "Next.js",
@@ -277,12 +280,13 @@
     {
       "company": "usedconex",
       "companyUrl": "https://usedconex.com/",
-      "role": "Backend Developer (Node.js)",
+      "logo": "/media/logo-usedconex.png",
+      "role": "Backend Developer",
       "start": "2024-02",
       "end": "",
       "location": "New York, USA · Fully remote",
       "highlights": [
-        "Develop backend services with Node.js for a platform that handles purchase and sales management, logistics, ticketing, announcements, warehouse management and more.",
+        "Develop backend services with Node.js and Express.js for a platform that handles purchase and sales management, logistics, ticketing, announcements, warehouse management and more.",
         "Use MongoDB as the main database and Redis in the backend.",
         "Develop real-time features using socket programming.",
         "Implement push notifications.",
@@ -290,6 +294,7 @@
       ],
       "stack": [
         "Node.js",
+        "Express.js",
         "MongoDB",
         "Redis",
         "Sockets",
@@ -299,6 +304,7 @@
     {
       "company": "Haal (Asan Pardakht Health)",
       "companyUrl": "",
+      "logo": "/media/logo-haal.png",
       "role": "Front-end Developer",
       "start": "2022-06",
       "end": "2025-10",
@@ -323,6 +329,7 @@
     {
       "company": "Gajino (Gajmarket)",
       "companyUrl": "",
+      "logo": "/media/logo-gajino.png",
       "role": "Front-end Developer",
       "start": "2020-11",
       "end": "2022-05",
@@ -344,6 +351,7 @@
     {
       "company": "zanis",
       "companyUrl": "",
+      "logo": "/media/logo-zanis.png",
       "role": "Front-end Developer",
       "start": "2019-10",
       "end": "2020-10",
@@ -364,6 +372,7 @@
     {
       "company": "Sarin Hooshmand Pooya",
       "companyUrl": "",
+      "logo": "/media/logo-sarin.png",
       "role": "Front-end Developer",
       "start": "2018-09",
       "end": "2019-09",
@@ -383,6 +392,7 @@
     {
       "company": "Zaravand",
       "companyUrl": "",
+      "logo": "/media/logo-zaravand.png",
       "role": "Front-end Developer",
       "start": "2017-11",
       "end": "2018-08",
@@ -402,6 +412,7 @@
     {
       "company": "Navac Asia",
       "companyUrl": "",
+      "logo": "/media/logo-navac.png",
       "role": "Junior Front-end Developer",
       "start": "2017-01",
       "end": "2017-10",
@@ -427,12 +438,13 @@
       "year": "2024 — now",
       "summary": "The backend of a system that handles purchase and sales management, logistics, ticketing, announcements, warehouse management and more.",
       "contributions": [
-        "Backend services written in Node.js",
+        "Backend services written in Node.js and Express.js",
         "MongoDB as the main database, Redis in the backend",
         "Real-time features via socket programming and push notifications"
       ],
       "stack": [
         "Node.js",
+        "Express.js",
         "MongoDB",
         "Redis",
         "Sockets"
