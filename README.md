@@ -1,4 +1,4 @@
-# Saman DorEmami — Portfolio (Next.js edition)
+# Reza Hashemi — Portfolio (Next.js edition)
 
 A 3D animated portfolio built on **Next.js (App Router)**, with **all content driven by one JSON file** and an **/admin editor** that changes that file (and the uploaded images/PDFs) at runtime — no database.
 

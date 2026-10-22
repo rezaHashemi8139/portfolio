@@ -8,7 +8,7 @@ export function siteOrigin(content: SiteContent): string {
 export const fullName = (c: SiteContent) => `${c.profile.firstName} ${c.profile.lastName}`.trim();
 
 export const initials = (c: SiteContent) =>
-  `${c.profile.firstName.charAt(0)}${c.profile.lastName.charAt(0)}`.toUpperCase() || 'SD';
+  `${c.profile.firstName.charAt(0)}${c.profile.lastName.charAt(0)}`.toUpperCase() || 'RH';
 
 export function absoluteUrl(origin: string, value: string): string {
   return /^https?:\/\//i.test(value) ? value : `${origin}${value.startsWith('/') ? '' : '/'}${value}`;

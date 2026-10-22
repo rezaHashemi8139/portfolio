@@ -5,152 +5,136 @@
     "language": "en"
   },
   "seo": {
-    "title": "Reza Hashemi — Senior Front-end Developer",
-    "description": "Reza Hashemi — Senior Front-end Developer. 4+ years building scalable, high-performance web applications with React, Next.js and TypeScript.",
+    "title": "Reza Hashemi — Front-end & Node.js Developer",
+    "description": "Reza Hashemi — Front-end & Node.js Developer. 9+ years building web applications with React and Next.js, and Node.js backends with MongoDB and Redis.",
     "keywords": [
-      "Saman DorEmami",
+      "Reza Hashemi",
       "Front-end developer",
-      "Senior front-end developer",
+      "Node.js developer",
+      "Backend developer",
       "React developer",
       "Next.js developer",
-      "TypeScript",
+      "MongoDB",
+      "Redis",
       "Portfolio"
     ],
-    "ogImage": "/media/saman-avatar.jpg",
-    "ogImageAlt": "Reza Hashemi — Senior Front-end Developer",
+    "ogImage": "/media/reza-avatar.jpg",
+    "ogImageAlt": "Reza Hashemi — Front-end & Node.js Developer",
     "twitterHandle": "",
     "noindex": false
   },
   "profile": {
-    "firstName": "Saman",
-    "lastName": "DorEmami",
-    "title": "Senior Front-end Developer",
-    "yearsOfExperience": "4+",
-    "photo": "/media/saman-portrait.webp",
-    "photoFallback": "/media/saman-portrait.jpg",
-    "photoAlt": "Portrait of Saman DorEmami",
-    "portraitCaption": "Front-end",
-    "resumeFile": "/media/Saman_DorEmami_Resume.pdf",
-    "resumeFileName": "Saman_DorEmami_Resume.pdf",
-    "summary": "Front-end developer with 4+ years of experience building clean, scalable, and high-performance web applications. Proficient in Next.js, React, and TypeScript/JavaScript, with a strong focus on user experience, maintainable code, and modern frontend technologies.",
-    "heroIntro": "I build **clean, scalable, high-performance** web applications with **Next.js, React and TypeScript** — from role-based CRM platforms and monorepos to real-time healthcare systems.",
+    "firstName": "Reza",
+    "lastName": "Hashemi",
+    "title": "Front-end & Node.js Developer",
+    "yearsOfExperience": "9+",
+    "photo": "/media/reza-portrait.webp",
+    "photoFallback": "/media/reza-portrait.jpg",
+    "photoAlt": "Portrait of Reza Hashemi",
+    "portraitCaption": "Front-end · Node.js",
+    "resumeFile": "/media/reza-hashemi-resume.pdf",
+    "resumeFileName": "Reza_Hashemi_Resume.pdf",
+    "summary": "Passionate developer with 9+ years of experience, interested in front-end and programming. I've mastered React, Redux and Next.js and used them across numerous projects; today I work as a Node.js backend developer with MongoDB, Redis, sockets and push notifications. I love clean code, keep learning new skills and enjoy working in dynamic teams.",
+    "heroIntro": "I build **fast, clean** web applications with **React and Next.js** — and today I power a **purchasing, logistics and warehouse platform** on the backend with **Node.js, MongoDB and Redis**.",
     "core": [
-      "Next.js",
+      "Node.js",
       "React",
-      "TypeScript"
+      "Next.js",
+      "MongoDB"
     ]
   },
   "contacts": [
     {
       "type": "email",
       "label": "Email",
-      "value": "mrgreen.voidmain@gmail.com",
-      "href": "mailto:mrgreen.voidmain@gmail.com",
-      "copy": "mrgreen.voidmain@gmail.com"
-    },
-    {
-      "type": "linkedin",
-      "label": "LinkedIn",
-      "value": "linkedin.com/in/saman-emamie",
-      "href": "https://linkedin.com/in/saman-emamie",
-      "copy": ""
-    },
-    {
-      "type": "github",
-      "label": "GitHub",
-      "value": "github.com/samanemamie",
-      "href": "https://github.com/samanemamie",
-      "copy": ""
+      "value": "reza.8139@gmail.com",
+      "href": "mailto:reza.8139@gmail.com",
+      "copy": "reza.8139@gmail.com"
     },
     {
       "type": "phone",
       "label": "Phone",
-      "value": "+98 902 425 1296",
-      "href": "tel:+989024251296",
-      "copy": "+98 902 425 1296"
+      "value": "+98 919 652 8139",
+      "href": "tel:+989196528139",
+      "copy": "+98 919 652 8139"
     }
   ],
   "sections": {
     "about": {
       "tag": "About",
-      "title": "Front-end, *end to end.*",
-      "statement": "I build interfaces that stay fast and maintainable as products grow — with a strong focus on user experience and clean, testable code.",
+      "title": "Front end to *back end.*",
+      "statement": "I build web products that stay fast and maintainable — from React and Next.js interfaces to Node.js services — and I love clean code.",
       "statementAccent": [
         "fast",
         "maintainable",
-        "user",
-        "experience"
+        "clean",
+        "code"
       ],
       "stats": [
         {
-          "value": 4,
+          "value": 9,
           "suffix": "+",
-          "label": "years of front-end experience"
+          "label": "years of web development"
         },
         {
-          "value": 10,
+          "value": 7,
           "suffix": "",
-          "label": "MVPs delivered in 12 months"
+          "label": "companies, from startups to health and logistics platforms"
         },
         {
-          "value": 2000,
-          "suffix": "+",
-          "label": "active users on dashboards I led"
-        },
-        {
-          "value": 4,
+          "value": 3,
           "suffix": "",
-          "label": "companies, incl. remote US & Canadian teams"
+          "label": "companies where I built real-time features"
         }
       ],
       "strengths": [
         {
-          "icon": "boxes",
-          "title": "Front-end architecture",
-          "text": "Migrated a multi-app frontend to a Turborepo monorepo with shared packages for API clients, components, providers, utilities and types."
-        },
-        {
-          "icon": "shield-check",
-          "title": "Access control & complex workflows",
-          "text": "Granular, role-based permissions for menus, tabs, columns, filters and actions — plus commissions, refunds, contracts and sales tax flows."
+          "icon": "database",
+          "title": "Node.js backend",
+          "text": "Backend services on Node.js with MongoDB and Redis for a platform covering purchasing, sales, logistics, ticketing, announcements and warehouse management."
         },
         {
           "icon": "radio",
-          "title": "Real-time & PWA",
-          "text": "WebSocket (SignalR) for live updates and chat, Service Workers for push notifications and offline support."
+          "title": "Real-time & push",
+          "text": "Socket programming and push notifications at usedconex, socket.io chat and PeerJS audio/video calls at Haal, and SignalR live call alerts at Sarin Hooshmand Pooya."
         },
         {
-          "icon": "flask-conical",
-          "title": "Testing culture",
-          "text": "Vitest, React Testing Library and MSW, applied with Clean Code, SOLID, DRY and design patterns."
+          "icon": "layers",
+          "title": "Front-end depth",
+          "text": "React, Redux and Next.js since 2017 — SPAs, PWAs, SSR websites, user apps and back-office panels, with TypeScript at Haal and Gajino."
+        },
+        {
+          "icon": "globe",
+          "title": "Maps, media & bulk messaging",
+          "text": "Leaflet location picking, Google Maps polygons for bulk SMS, Excel-based bulk SMS and HLS video streaming."
         },
         {
           "icon": "users",
-          "title": "Team leadership",
-          "text": "Led a front-end team, mentored junior developers and ran in-depth code reviews."
+          "title": "Clean code, dynamic teams",
+          "text": "I care about clean, maintainable code and enjoy working in dynamic teams — and I'd rather be the smallest person on a big team than stop learning."
         }
       ]
     },
     "skills": {
       "tag": "Skills",
       "title": "Core *Toolkit*",
-      "intro": "Grouped the way they show up in real work: the core stack, the styling and state layers around it, and the practices that keep it maintainable.",
+      "intro": "Grouped the way they show up in real work: the backend I run today, the front-end stack I built my career on, and the real-time and tooling layers around them.",
       "coreTitle": "Core stack",
       "core": [
         {
-          "name": "Next.js",
-          "note": "SSR / SSG",
-          "evidence": "Hospital booking, doctor profiles, an SSR/SSG e-commerce platform and 10 MVPs with Supabase."
+          "name": "Node.js",
+          "note": "Backend · MongoDB · Redis",
+          "evidence": "Backend services for usedconex's purchasing, sales, logistics, ticketing, announcements and warehouse platform."
         },
         {
           "name": "React",
-          "note": "SPA · dashboards",
-          "evidence": "A role-based CRM, real-time patient chat, and dashboards serving 2,000+ active users."
+          "note": "SPAs · panels · PWA",
+          "evidence": "User apps, a consultant app, back-office panels, a call-center app and a PWA across Haal, Gajino, zanis and Sarin Hooshmand Pooya."
         },
         {
-          "name": "TypeScript",
-          "note": "+ JavaScript",
-          "evidence": "Typed shared packages for API clients, components and utilities across a Turborepo monorepo."
+          "name": "Next.js",
+          "note": "SSR websites",
+          "evidence": "Haal's user app (with TypeScript) and Gajino's website."
         }
       ],
       "groups": [
@@ -162,82 +146,85 @@
           "showCard": false,
           "wide": false,
           "items": [
-            "Next.js",
+            "Node.js",
             "React.js",
-            "TypeScript",
-            "JavaScript"
+            "Next.js",
+            "JavaScript (ES6)",
+            "TypeScript"
           ]
         },
         {
-          "id": "styling",
-          "title": "Styling",
-          "caption": "Design systems and component libraries.",
-          "icon": "palette",
-          "showCard": true,
-          "wide": false,
-          "items": [
-            "Tailwind",
-            "Shadcn UI",
-            "SCSS / SASS",
-            "Material UI"
-          ]
-        },
-        {
-          "id": "state",
-          "title": "State Management",
-          "caption": "Predictable client state at scale.",
+          "id": "backend",
+          "title": "Backend & Data",
+          "caption": "The services and storage behind the platform.",
           "icon": "database",
           "showCard": true,
           "wide": false,
           "items": [
-            "Zustand",
-            "Redux Toolkit"
-          ]
-        },
-        {
-          "id": "testing",
-          "title": "Testing",
-          "caption": "Confidence through unit and integration tests.",
-          "icon": "flask-conical",
-          "showCard": true,
-          "wide": false,
-          "items": [
-            "Vitest",
-            "React Testing Library",
-            "Unit Testing",
-            "Integration Testing"
+            "Node.js",
+            "MongoDB",
+            "Redis",
+            "REST APIs"
           ]
         },
         {
           "id": "realtime",
           "title": "Real-time & PWA",
-          "caption": "Live updates and offline-ready apps.",
+          "caption": "Live updates, calls and offline-ready apps.",
           "icon": "radio",
           "showCard": true,
           "wide": false,
           "items": [
-            "WebSocket (SignalR)",
-            "Service Workers",
+            "Socket programming",
+            "socket.io",
+            "SignalR",
+            "PeerJS",
             "Push Notifications",
-            "Offline Support",
             "PWA"
           ]
         },
         {
-          "id": "practices",
-          "title": "Practices & Tools",
-          "caption": "How I keep codebases maintainable.",
+          "id": "state",
+          "title": "State & Forms",
+          "caption": "Predictable client state and validated forms.",
           "icon": "git-branch",
+          "showCard": true,
+          "wide": false,
+          "items": [
+            "Redux",
+            "Formik",
+            "Yup"
+          ]
+        },
+        {
+          "id": "styling",
+          "title": "Styling & UI",
+          "caption": "Component libraries and polished interfaces.",
+          "icon": "palette",
+          "showCard": true,
+          "wide": false,
+          "items": [
+            "styled-components",
+            "Material UI",
+            "Ant Design",
+            "Sass",
+            "CSS animation",
+            "HTML"
+          ]
+        },
+        {
+          "id": "tools",
+          "title": "Libraries & Tools",
+          "caption": "Maps, media and everyday tooling.",
+          "icon": "wrench",
           "showCard": true,
           "wide": true,
           "items": [
-            "Git (Husky, Conventional Commits)",
-            "Agile / Scrum",
-            "Storybook",
-            "Clean Code",
-            "SOLID",
-            "DRY",
-            "Design Patterns"
+            "Leaflet",
+            "Google Maps",
+            "HLS player",
+            "Git",
+            "jQuery"
           ]
         }
       ]
@@ -245,27 +232,34 @@
     "experience": {
       "tag": "Experience",
       "title": "Where I’ve *Built*",
-      "intro": "From e-commerce and AR tooling to healthcare platforms and a role-based CRM — remote teams in the US and Canada included.",
+      "intro": "From call-center and municipal-revenue apps to a health platform and a logistics backend — nine years across front end and Node.js.",
       "highlightTerms": [
-        "permission-based access control system",
-        "React Testing Library",
-        "Turborepo monorepo",
-        "10 fully functional MVPs",
-        "2,000 active users",
+        "push notifications",
+        "socket programming",
+        "styled-components",
+        "Formik and Yup",
+        "Google Maps",
+        "Material UI",
+        "Ant Design",
+        "HLS player",
+        "real-time",
         "TypeScript",
-        "WebSocket",
+        "socket.io",
+        "MongoDB",
         "Next.js",
-        "Supabase",
-        "Vitest",
-        "React",
-        "MSW",
-        "SSR & SSG"
+        "SignalR",
+        "Leaflet",
+        "PeerJS",
+        "Node.js",
+        "jQuery",
+        "Redis",
+        "React"
       ]
     },
     "work": {
       "tag": "Work",
       "title": "Selected *Work*",
-      "intro": "Products I built or led on the front end, from a multi-module CRM to healthcare platforms, dashboards and e-commerce."
+      "intro": "Products I built or helped build, from a purchasing and logistics backend to health apps with real-time chat and calls, a PWA, a call-center app and municipal tooling."
     },
     "education": {
       "tag": "Education",
@@ -275,107 +269,173 @@
     "contact": {
       "tag": "Contact",
       "title": "Let’s build something *precise.*",
-      "text": "Hiring for a front-end role or need a React / Next.js engineer on your product? Reach out by email or LinkedIn — or grab the résumé.",
-      "emailButtonLabel": "Email Saman"
+      "text": "Hiring for a Node.js or React / Next.js role, or need a developer who can work across both sides of your product? Reach out by email or phone — or grab the résumé.",
+      "emailButtonLabel": "Email Reza"
     }
   },
   "experience": [
     {
-      "company": "usedConex",
+      "company": "usedconex",
       "companyUrl": "https://usedconex.com/",
-      "role": "Senior Frontend Developer",
-      "start": "2025-08",
+      "role": "Backend Developer (Node.js)",
+      "start": "2024-02",
       "end": "",
-      "location": "USA · Remote",
-      "highlights": [
-        "Developed and maintained a role-based CRM platform using React and TypeScript, implementing core modules including Orders, Sales Pipeline, Inventory, Depots, Users, Tickets, and Notifications.",
-        "Architected and migrated the frontend to a scalable Turborepo monorepo, creating reusable shared packages for API clients, components, providers, utilities, and types across multiple applications.",
-        "Designed and implemented a granular permission-based access control system supporting role-specific access to menus, sections, tabs, columns, filters, tables, and actions.",
-        "Built complex sales and operational workflows including Commissions, Discounts, Sales Tax, Refunds, Contracts, Order Notes, Announcements, and Analytics, integrating them with backend APIs and real-time updates.",
-        "Established frontend testing practices using Vitest, React Testing Library, and MSW, while applying Clean Code, SOLID, DRY, and Design Patterns to maintain a scalable and maintainable codebase."
-      ],
-      "stack": [
-        "React",
-        "TypeScript",
-        "Turborepo",
-        "Vitest",
-        "React Testing Library",
-        "MSW"
-      ]
-    },
-    {
-      "company": "Rayteb",
-      "companyUrl": "https://www.linkedin.com/in/ray-teb-a8b165210/",
-      "role": "Frontend Developer",
-      "start": "2024-07",
-      "end": "2025-07",
       "location": "",
       "highlights": [
-        "Developed an appointment scheduling system for public hospitals and private clinics using Next.js, enabling patients to book appointments and verify their information through integrations with government medical organizations such as Social Security Insurance and Health Insurance — cutting average appointment booking time significantly.",
-        "Built a real-time support chat system using React and WebSocket, enabling seamless communication between patients and support representatives and measurably improving response times and customer satisfaction.",
-        "Engineered a doctor profile platform using Next.js, showcasing doctors' backgrounds, experience, and professional history, which contributed to higher patient engagement with doctor profiles.",
-        "Created a React-based dashboard for doctors to manage and prescribe medications, streamlining the prescription workflow and reducing time spent on administrative tasks."
+        "Develop backend services with Node.js for a platform that handles purchase and sales management, logistics, ticketing, announcements, warehouse management and more.",
+        "Use MongoDB as the main database and Redis in the backend.",
+        "Develop real-time features using socket programming.",
+        "Implement push notifications.",
+        "Joined part-time in February 2024 and moved to a full-time position in October 2025."
       ],
       "stack": [
-        "Next.js",
-        "React",
-        "WebSocket"
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "Sockets",
+        "Push notifications"
       ]
     },
     {
-      "company": "Sparkbridge Incubator Ltd",
-      "companyUrl": "https://www.sparkbridge.ca/about",
-      "role": "Front-end Developer",
-      "start": "2023-04",
-      "end": "2024-06",
-      "location": "Canada · Remote",
-      "highlights": [
-        "Led and organized the front-end development team, driving the adoption of modern technologies and migrating two legacy websites to React-based Single-Page Applications (SPAs), improving page load speed and user retention.",
-        "Mentored junior developers, conducted in-depth code reviews to ensure high code quality, and led the development of two scalable React-based dashboards serving over 2,000 active users.",
-        "Delivered 10 fully functional MVPs within 12 months using Next.js and Supabase's serverless architecture, consistently meeting tight deadlines while maintaining high-quality standards."
-      ],
-      "stack": [
-        "React",
-        "Next.js",
-        "Supabase"
-      ]
-    },
-    {
-      "company": "Minogar",
+      "company": "Haal (Asan Pardakht Health)",
       "companyUrl": "",
-      "role": "Frontend Developer",
-      "start": "2022-03",
-      "end": "2023-03",
-      "location": "",
+      "role": "Front-end Developer",
+      "start": "2022-06",
+      "end": "2025-10",
+      "location": "Tehran, Iran · Hybrid",
       "highlights": [
-        "Designed and developed an e-commerce platform using Next.js, implementing advanced rendering strategies (SSR & SSG) to optimize performance and SEO, reducing page load time and increasing organic traffic.",
-        "Launched a React-based admin panel for uploading and managing 3D models for AR web experiences, including comprehensive product management features."
+        "Developed the user app using Next.js and TypeScript.",
+        "Developed the consultant app using React.",
+        "Built real-time in-app chat with socket.io.",
+        "Integrated a Leaflet map so users can select their location.",
+        "Added video and audio calls, plus chat during calls, using PeerJS.",
+        "Styled the apps with styled-components."
       ],
       "stack": [
         "Next.js",
+        "TypeScript",
         "React",
-        "SSR / SSG"
+        "socket.io",
+        "PeerJS",
+        "Leaflet"
+      ]
+    },
+    {
+      "company": "Gajino (Gajmarket)",
+      "companyUrl": "",
+      "role": "Front-end Developer",
+      "start": "2020-11",
+      "end": "2022-05",
+      "location": "Tehran, Iran · On-site",
+      "highlights": [
+        "Developed the user PWA using React and Ant Design.",
+        "Developed the website using Next.js.",
+        "Streamed videos with an HLS player.",
+        "Built the back-office panel using React and TypeScript."
+      ],
+      "stack": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Ant Design",
+        "PWA"
+      ]
+    },
+    {
+      "company": "zanis",
+      "companyUrl": "",
+      "role": "Front-end Developer",
+      "start": "2019-10",
+      "end": "2020-10",
+      "location": "Qom, Iran · On-site",
+      "highlights": [
+        "Developed the user panel using React and Material UI.",
+        "Built bulk SMS sending from an Excel file.",
+        "Built bulk SMS sending by drawing a polygon on Google Maps.",
+        "Developed the company website using HTML, CSS and jQuery."
+      ],
+      "stack": [
+        "React",
+        "Material UI",
+        "Google Maps",
+        "jQuery"
+      ]
+    },
+    {
+      "company": "Sarin Hooshmand Pooya",
+      "companyUrl": "",
+      "role": "Front-end Developer",
+      "start": "2018-09",
+      "end": "2019-09",
+      "location": "Qom, Iran · On-site",
+      "highlights": [
+        "Developed a call-center app using React and CSS.",
+        "Used SignalR to show new calls from users in real-time.",
+        "Handled forms with Formik and Yup."
+      ],
+      "stack": [
+        "React",
+        "SignalR",
+        "Formik",
+        "Yup"
+      ]
+    },
+    {
+      "company": "Zaravand",
+      "companyUrl": "",
+      "role": "Front-end Developer",
+      "start": "2017-11",
+      "end": "2018-08",
+      "location": "Kerman, Iran · Remote",
+      "highlights": [
+        "Developed the user app using React and styled-components.",
+        "Developed a web app for the management of municipal revenues.",
+        "Handled forms with Formik and Yup."
+      ],
+      "stack": [
+        "React",
+        "styled-components",
+        "Formik",
+        "Yup"
+      ]
+    },
+    {
+      "company": "Navac Asia",
+      "companyUrl": "",
+      "role": "Junior Front-end Developer",
+      "start": "2017-01",
+      "end": "2017-10",
+      "location": "Qom, Iran · On-site",
+      "highlights": [
+        "Developed a website with jQuery, Sass and HTML.",
+        "Contributed to a website built with AngularJS while learning the framework.",
+        "Learned React and Redux."
+      ],
+      "stack": [
+        "jQuery",
+        "Sass",
+        "HTML",
+        "AngularJS"
       ]
     }
   ],
   "projects": [
     {
-      "id": "crm",
-      "title": "Role-based CRM Platform",
-      "context": "usedConex",
-      "year": "2025 — now",
-      "summary": "A multi-module CRM covering Orders, Sales Pipeline, Inventory, Depots, Users, Tickets and Notifications, with sales workflows such as Commissions, Discounts, Sales Tax, Refunds and Contracts.",
+      "id": "usedconex-platform",
+      "title": "Purchasing, Logistics & Warehouse Platform",
+      "context": "usedconex",
+      "year": "2024 — now",
+      "summary": "The backend of a system that handles purchase and sales management, logistics, ticketing, announcements, warehouse management and more.",
       "contributions": [
-        "Granular permission system down to menus, tabs, columns, filters and actions",
-        "Migrated the frontend to a Turborepo monorepo with shared packages",
-        "Testing practice with Vitest, React Testing Library and MSW"
+        "Backend services written in Node.js",
+        "MongoDB as the main database, Redis in the backend",
+        "Real-time features via socket programming and push notifications"
       ],
       "stack": [
-        "React",
-        "TypeScript",
-        "Turborepo",
-        "Vitest",
-        "MSW"
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "Sockets"
       ],
       "metricValue": "",
       "metricLabel": "",
@@ -383,18 +443,21 @@
       "linkLabel": "usedconex.com"
     },
     {
-      "id": "appointments",
-      "title": "Hospital Appointment Scheduling",
-      "context": "Rayteb",
-      "year": "2024 — 2025",
-      "summary": "Online booking for public hospitals and private clinics, verifying patient information through integrations with government medical organizations such as Social Security Insurance and Health Insurance.",
+      "id": "haal-user-app",
+      "title": "Haal User App",
+      "context": "Haal (Asan Pardakht Health)",
+      "year": "2022 — 2025",
+      "summary": "The user-facing health app, built with Next.js and TypeScript, with in-app chat and location selection.",
       "contributions": [
-        "Booking flow built with Next.js",
-        "Integrations with government insurance organizations",
-        "Cut average appointment booking time significantly"
+        "Real-time in-app chat with socket.io",
+        "Leaflet map for selecting a location",
+        "Styled with styled-components"
       ],
       "stack": [
-        "Next.js"
+        "Next.js",
+        "TypeScript",
+        "socket.io",
+        "Leaflet"
       ],
       "metricValue": "",
       "metricLabel": "",
@@ -402,18 +465,19 @@
       "linkLabel": ""
     },
     {
-      "id": "support-chat",
-      "title": "Real-time Patient Support Chat",
-      "context": "Rayteb",
-      "year": "2024 — 2025",
-      "summary": "A live chat system connecting patients with support representatives, measurably improving response times and customer satisfaction.",
+      "id": "haal-consultant-app",
+      "title": "Haal Consultant App & Calls",
+      "context": "Haal (Asan Pardakht Health)",
+      "year": "2022 — 2025",
+      "summary": "The consultant-side app built with React, including video and audio calls with chat during the call.",
       "contributions": [
-        "Real-time messaging over WebSocket",
-        "Built with React"
+        "Video and audio calls using PeerJS",
+        "Chat available during calls"
       ],
       "stack": [
         "React",
-        "WebSocket"
+        "PeerJS",
+        "socket.io"
       ],
       "metricValue": "",
       "metricLabel": "",
@@ -421,57 +485,64 @@
       "linkLabel": ""
     },
     {
-      "id": "dashboards",
-      "title": "React Dashboards & SPA Migrations",
-      "context": "Sparkbridge Incubator",
-      "year": "2023 — 2024",
-      "summary": "Led the front-end team that migrated two legacy websites to React single-page applications and built two scalable dashboards.",
+      "id": "gajino-pwa",
+      "title": "Gajino PWA, Website & Back Office",
+      "context": "Gajino (Gajmarket)",
+      "year": "2020 — 2022",
+      "summary": "A user PWA, a Next.js website and a back-office panel, with video streaming.",
       "contributions": [
-        "Improved page load speed and user retention",
-        "Mentored junior developers and ran code reviews"
+        "User PWA with React and Ant Design",
+        "Website built with Next.js",
+        "Video streaming with an HLS player",
+        "Back-office panel with React and TypeScript"
       ],
       "stack": [
         "React",
-        "SPA"
-      ],
-      "metricValue": "2,000+",
-      "metricLabel": "active users",
-      "linkHref": "https://www.sparkbridge.ca/about",
-      "linkLabel": "sparkbridge.ca"
-    },
-    {
-      "id": "mvps",
-      "title": "10 MVPs in 12 Months",
-      "context": "Sparkbridge Incubator",
-      "year": "2023 — 2024",
-      "summary": "Ten fully functional MVPs delivered within a year on Next.js and Supabase's serverless architecture, meeting tight deadlines without dropping quality.",
-      "contributions": [
-        "Next.js front ends",
-        "Supabase serverless back ends"
-      ],
-      "stack": [
         "Next.js",
-        "Supabase"
+        "TypeScript",
+        "Ant Design"
       ],
-      "metricValue": "10",
-      "metricLabel": "MVPs shipped",
+      "metricValue": "",
+      "metricLabel": "",
       "linkHref": "",
       "linkLabel": ""
     },
     {
-      "id": "commerce",
-      "title": "E-commerce Platform & AR Admin",
-      "context": "Minogar",
-      "year": "2022 — 2023",
-      "summary": "A Next.js storefront using SSR and SSG for performance and SEO, plus a React admin panel for uploading and managing 3D models for AR web experiences.",
+      "id": "bulk-sms-panel",
+      "title": "Bulk SMS User Panel",
+      "context": "zanis",
+      "year": "2019 — 2020",
+      "summary": "A user panel for sending bulk SMS, either from an Excel file or by selecting an area with a polygon on Google Maps.",
       "contributions": [
-        "Reduced page load time and increased organic traffic",
-        "3D model management for AR product experiences"
+        "Built with React and Material UI",
+        "Bulk sending from an Excel file",
+        "Bulk sending by Google Maps polygon"
       ],
       "stack": [
-        "Next.js",
         "React",
-        "SSR / SSG"
+        "Material UI",
+        "Google Maps"
+      ],
+      "metricValue": "",
+      "metricLabel": "",
+      "linkHref": "",
+      "linkLabel": ""
+    },
+    {
+      "id": "call-center-app",
+      "title": "Call Center App",
+      "context": "Sarin Hooshmand Pooya",
+      "year": "2018 — 2019",
+      "summary": "A call-center app built with React that shows new calls from users the moment they arrive.",
+      "contributions": [
+        "Live new-call display using SignalR",
+        "Forms handled with Formik and Yup"
+      ],
+      "stack": [
+        "React",
+        "SignalR",
+        "Formik",
+        "Yup"
       ],
       "metricValue": "",
       "metricLabel": "",
@@ -481,21 +552,27 @@
   ],
   "education": [
     {
-      "degree": "Associate's degree",
-      "field": "Software Engineering",
-      "school": "Shahab Danesh University",
-      "schoolUrl": "https://www.linkedin.com/school/shdu/"
+      "degree": "Master's degree",
+      "field": "Civil Engineering · 2014 – 2017",
+      "school": "University of Qom",
+      "schoolUrl": ""
+    },
+    {
+      "degree": "Bachelor's degree",
+      "field": "Civil Engineering · 2010 – 2014",
+      "school": "University of Tafresh",
+      "schoolUrl": ""
     }
   ],
   "languages": [
     {
       "name": "Persian",
-      "level": "Native proficiency"
+      "level": "Native"
     },
     {
       "name": "English",
-      "level": "Bilingual proficiency"
+      "level": "Intermediate"
     }
   ],
-  "updatedAt": "2026-10-22T09:25:35.967Z"
+  "updatedAt": "2026-10-22T10:00:00.000Z"
 }
