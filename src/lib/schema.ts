@@ -48,7 +48,7 @@ const sectionHead = z.object({
 
 export const contentSchema = z.object({
   site: z.object({
-    /** Public origin, e.g. https://saman.dev — used for canonical URLs, sitemap and social cards. */
+    /** Public origin, e.g. https://example.com — used for canonical URLs, sitemap and social cards. */
     url: z
       .string()
       .trim()
