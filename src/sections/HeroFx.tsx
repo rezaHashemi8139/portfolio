@@ -41,8 +41,9 @@ export function HeroFx() {
     const card = sectionOf(marker)?.querySelector<HTMLElement>('.portrait');
     if (!card || !isFinePointer() || prefersReducedMotion()) return;
     const img = card.querySelector('img');
-    const rx = gsap.quickTo(card, 'rotateX', { duration: 1, ease: 'power3.out' });
-    const ry = gsap.quickTo(card, 'rotateY', { duration: 1, ease: 'power3.out' });
+    // Canonical names: quickTo looks tweens up by property name and does not understand the rotateX/rotateY aliases.
+    const rx = gsap.quickTo(card, 'rotationX', { duration: 1, ease: 'power3.out' });
+    const ry = gsap.quickTo(card, 'rotationY', { duration: 1, ease: 'power3.out' });
     gsap.set(card, { transformPerspective: 1200 });
     const onMove = (e: PointerEvent) => {
       if (window.scrollY > window.innerHeight) return;

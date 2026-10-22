@@ -6,7 +6,7 @@ A 3D animated portfolio built on **Next.js (App Router)**, with **all content dr
 
 ```bash
 npm install
-cp .env.example .env.local     # then set ADMIN_PASSWORD and SESSION_SECRET (a .env.local is already generated here)
+cp .env.example .env.local     # then set ADMIN_USERNAME, ADMIN_PASSWORD and SESSION_SECRET (see "Admin" below)
 npm run dev                    # http://localhost:3000  — editor at /admin
 # production
 npm run build && npm start
@@ -28,7 +28,58 @@ content/
 
 ## Admin (`/admin`)
 
-Sign in with `ADMIN_USERNAME` (default `admin`) and `ADMIN_PASSWORD`. Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
+This project has a built-in admin page for editing the whole site (texts, links, images, résumé PDF) without touching code. Open **`/admin`** (locally: <http://localhost:3000/admin>); you will be redirected to `/admin/login`.
+
+### Default login
+
+| | Default |
+| --- | --- |
+| Username | `admin` |
+| Password | `change-me` |
+
+These come from `.env.example`: once you copy it to `.env.local` (see [Run](#run)) and start the server, you can sign in with `admin` / `change-me`. The username falls back to `admin` even if `ADMIN_USERNAME` is not set, but there is **no built-in password** — without `ADMIN_PASSWORD` and a `SESSION_SECRET` of at least 16 characters the admin stays switched off and `/admin` shows a setup notice.
+
+> **Change the default password (and `SESSION_SECRET`) before deploying.** Anyone who knows `admin` / `change-me` can edit your site.
+
+### Changing the username and password
+
+1. Open `.env.local` (on a server: the environment variables of your host / Docker / process manager).
+2. Set your own values:
+
+   ```bash
+   ADMIN_USERNAME=my-name
+   ADMIN_PASSWORD=a-long-strong-password
+   SESSION_SECRET=<16+ random characters>
+   ```
+
+   Generate a secret with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`.
+3. **Restart the server** (`npm run dev` / `npm start`). Environment variables are read at start-up.
+
+Changing the username, the password or `SESSION_SECRET` signs every existing session out, so you will have to log in again. The login is throttled (6 wrong attempts per 15 minutes per address) and the error message never says which of the two was wrong.
+
+### Changing the admin address (URL)
+
+The editor lives at `/admin` by default. To move it, e.g. to `/dashboard`:
+
+1. Rename the folder `src/app/(admin)/admin` → `src/app/(admin)/dashboard`.
+2. Replace the `/admin` page paths in these places (keep `/api/admin/...` as it is — that is the API, not the page):
+
+   | File | What to change |
+   | --- | --- |
+   | `src/admin/LoginForm.tsx` | `window.location.href = '/admin'` |
+   | `src/admin/Editor.tsx` | `'/admin/login'` after logout |
+   | `src/admin/api.ts` | `'/admin/login'` when the session expires |
+   | `src/app/(admin)/dashboard/page.tsx` | `redirect('/admin/login')` |
+   | `src/app/(admin)/dashboard/login/page.tsx` | `redirect('/admin')` |
+   | `src/app/robots.ts` | `disallow: ['/admin', …]` |
+   | `next.config.ts` | `source: '/admin/:path*'` (the no-store / noindex headers) |
+3. Restart the server and open `/dashboard`.
+
+A less obvious address is not a replacement for a strong password — the page is protected by the login either way.
+
+### Using the editor
+
+Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
 `Ctrl/⌘ + S` saves. Replacing a file keeps its URL, so nothing else needs changing. Deleting a file that is still referenced asks for confirmation.
 
 Security: signed httpOnly + SameSite=Strict cookie, constant-time username + password check, login throttling, same-origin check on every write, every API route re-checks the session, uploads validated by extension **and** magic bytes (SVGs are served sandboxed), strict link-scheme allow-list in the schema, `noindex` + `no-store` on the admin.
