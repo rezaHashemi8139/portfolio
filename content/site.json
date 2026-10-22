@@ -42,7 +42,8 @@
       "React",
       "Node.js",
       "Next.js",
-      "MongoDB"
+      "MongoDB",
+      "Redis"
     ]
   },
   "contacts": [
