@@ -32,7 +32,7 @@ This project has a built-in admin page for editing the whole site (texts, links,
 
 ### Default login
 
-| | Default |
+| Field | Default |
 | --- | --- |
 | Username | `admin` |
 | Password | `change-me` |
