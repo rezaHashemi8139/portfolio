@@ -12,6 +12,7 @@ import { Skills } from '@/sections/Skills';
 import { Experience } from '@/sections/Experience';
 import { Work } from '@/sections/Work';
 import { Education } from '@/sections/Education';
+import { Links } from '@/sections/Links';
 import { Contact } from '@/sections/Contact';
 import { Footer } from '@/sections/Footer';
 
@@ -67,6 +68,7 @@ export default async function HomePage() {
     { id: 'skills', label: sections.skills.tag },
     { id: 'experience', label: sections.experience.tag },
     { id: 'work', label: sections.work.tag },
+    ...(content.links.some((l) => l.href) ? [{ id: 'links', label: sections.links.tag }] : []),
     { id: 'contact', label: sections.contact.tag },
   ];
 
@@ -91,6 +93,7 @@ export default async function HomePage() {
         <Experience content={content} />
         <Work content={content} />
         <Education content={content} />
+        <Links content={content} />
         <Contact content={content} />
       </main>
       <Footer content={content} />

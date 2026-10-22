@@ -1267,6 +1267,28 @@ a.edu-card__school:hover {
   gap: 6px;
 }
 
+/* Links section: the whole card is one link (the anchor's ::after covers it). */
+.link-card {
+  position: relative;
+}
+
+.link-card__value {
+  font-weight: 550;
+  overflow-wrap: anywhere;
+}
+
+.link-card__value::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-lg);
+}
+
+.link-card:hover .icon-btn {
+  color: var(--accent);
+  border-color: var(--border-strong);
+}
+
 @media (min-width: 760px) {
   .contact__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -62,6 +62,26 @@
       "copy": "+98 919 652 8139"
     }
   ],
+  "links": [
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "linkedin.com",
+      "href": "https://www.linkedin.com/"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "value": "github.com",
+      "href": "https://github.com/"
+    },
+    {
+      "type": "telegram",
+      "label": "Telegram",
+      "value": "t.me",
+      "href": "https://t.me/"
+    }
+  ],
   "sections": {
     "about": {
       "tag": "About",
@@ -279,6 +299,11 @@
       "tag": "Education",
       "title": "Education & *Languages*",
       "languagesTitle": "Languages"
+    },
+    "links": {
+      "tag": "Links",
+      "title": "Find me *online*",
+      "intro": "My profiles and channels — pick the one you prefer."
     },
     "contact": {
       "tag": "Contact",

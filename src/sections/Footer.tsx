@@ -5,7 +5,13 @@ import { FooterFx } from './FooterFx';
 export function Footer({ content }: { content: SiteContent }) {
   const { profile, contacts } = content;
   const name = `${profile.firstName}${profile.lastName}`;
-  const links = contacts.filter((c) => /^https?:/i.test(c.href));
+  // Contact entries and the Links section share the footer; the same address is listed once.
+  const seen = new Set<string>();
+  const links = [...contacts, ...content.links].filter((c) => {
+    if (!/^https?:/i.test(c.href) || seen.has(c.href)) return false;
+    seen.add(c.href);
+    return true;
+  });
 
   return (
     <footer className="site-footer">

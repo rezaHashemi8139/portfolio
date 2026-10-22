@@ -1,7 +1,7 @@
 import { z } from 'zod';
-import { CONTACT_TYPES, ICON_NAMES } from './constants';
+import { CONTACT_TYPES, ICON_NAMES, LINK_TYPES } from './constants';
 
-export type { ContactType, IconName } from './constants';
+export type { ContactType, IconName, LinkType } from './constants';
 
 /**
  * The shape of content/site.json — the single source of truth for the whole site.
@@ -100,6 +100,18 @@ export const contentSchema = z.object({
     12,
   ),
 
+  /** Profiles and channels listed in the “Links” section (LinkedIn, GitHub, Telegram…). Empty = section hidden. */
+  links: list(
+    z.object({
+      type: z.enum(LINK_TYPES),
+      label: short(40),
+      /** Text shown on the card, e.g. a handle or a shortened address. Falls back to the link when empty. */
+      value: short(120),
+      href,
+    }),
+    12,
+  ).default([]),
+
   sections: z.object({
     about: sectionHead.extend({
       statement: long(400),
@@ -142,6 +154,9 @@ export const contentSchema = z.object({
     }),
     work: sectionHead.extend({ intro: long(400) }),
     education: sectionHead.extend({ languagesTitle: short(60) }),
+    links: sectionHead
+      .extend({ intro: long(400) })
+      .default({ tag: 'Links', title: 'Find me *online*', intro: '' }),
     contact: sectionHead.extend({
       text: long(500),
       emailButtonLabel: short(60),

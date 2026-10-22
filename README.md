@@ -79,7 +79,7 @@ A less obvious address is not a replacement for a strong password — the page i
 
 ### Using the editor
 
-Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
+Tabs: Site & SEO, Profile & hero, About, Skills, Experience, Work, Education, **Links** (LinkedIn, GitHub, Telegram… — the section is hidden while empty), Contact, **Files & images** (upload / replace / delete, usage tracking), **Raw JSON**, **History** (restore older versions).
 `Ctrl/⌘ + S` saves. Replacing a file keeps its URL, so nothing else needs changing. Deleting a file that is still referenced asks for confirmation.
 
 Security: signed httpOnly + SameSite=Strict cookie, constant-time username + password check, login throttling, same-origin check on every write, every API route re-checks the session, uploads validated by extension **and** magic bytes (SVGs are served sandboxed), strict link-scheme allow-list in the schema, `noindex` + `no-store` on the admin.

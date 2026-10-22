@@ -1,4 +1,4 @@
-import { CONTACT_TYPES, ICON_NAMES } from '@/lib/constants';
+import { CONTACT_TYPES, ICON_NAMES, LINK_TYPES } from '@/lib/constants';
 import type { FieldDef, Path } from './form';
 
 /* The whole admin form is described here as data. Adding a field to site.json = adding a line below
@@ -6,6 +6,7 @@ import type { FieldDef, Path } from './form';
 
 const iconOptions = ICON_NAMES.map((value) => ({ value, label: value.replace(/-/g, ' ') }));
 const contactTypes = CONTACT_TYPES.map((value) => ({ value, label: value }));
+const linkTypes = LINK_TYPES.map((value) => ({ value, label: value }));
 const rid = () => Math.random().toString(36).slice(2, 6);
 const thisMonth = () => new Date().toISOString().slice(0, 7);
 
@@ -284,6 +285,38 @@ export const TABS: TabDef[] = [
     ],
   },
   {
+    id: 'links',
+    label: 'Links',
+    blocks: [
+      {
+        title: 'Section',
+        hint: 'The section only appears on the site while at least one link below is filled in.',
+        base: ['sections', 'links'],
+        fields: [...sectionHead, { type: 'textarea', key: 'intro', label: 'Intro (optional)', rows: 2 }],
+      },
+      {
+        title: 'Profiles & channels',
+        hint: 'LinkedIn, GitHub, Telegram… Shown as cards, in this order. Links also appear in the footer.',
+        base: [],
+        fields: [
+          {
+            type: 'array',
+            key: 'links',
+            label: 'Links',
+            itemTitle: (l) => [l.label, l.value].filter(Boolean).join(' — '),
+            blank: () => ({ type: 'linkedin', label: 'LinkedIn', value: '', href: 'https://' }),
+            fields: [
+              { type: 'select', key: 'type', label: 'Type (sets the icon)', options: linkTypes },
+              { type: 'text', key: 'label', label: 'Label', placeholder: 'LinkedIn' },
+              { type: 'text', key: 'value', label: 'Displayed text', placeholder: 'linkedin.com/in/your-name or @handle' },
+              { type: 'text', key: 'href', label: 'Link', placeholder: 'https://…' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: 'contact',
     label: 'Contact',
     blocks: [
@@ -327,6 +360,7 @@ export function tabForPath(path: string): string {
   if (a === 'site' || a === 'seo') return 'general';
   if (a === 'profile') return 'profile';
   if (a === 'contacts') return 'contact';
+  if (a === 'links') return 'links';
   if (a === 'experience') return 'experience';
   if (a === 'projects') return 'work';
   if (a === 'education' || a === 'languages') return 'education';
